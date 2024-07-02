@@ -1,5 +1,111 @@
 <template>
-  <h1>{{ professor }}</h1>
+  <div class="materia-wrapper">
+    <PopUp
+			v-if="popupTrigger.buttonTrigger"
+			:TogglePopup="() => TogglePopup('buttonTrigger')"
+			:materia="materia"
+		/>
+    <div class="info-materia">
+      <div class="wrapper">
+        <div class="materia-details-rating2">
+          <div class="voltar" @click="voltarPagina">
+            <div class="icon">
+              <svg
+                width="22"
+                height="39"
+                viewBox="0 0 22 39"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.3128 37.7848C19.8284 38.2535 20.6253 38.2066 21.094 37.691C21.5628 37.1754 21.5159 36.3785 21.0003 35.9098L2.85963 19.5035C2.39088 19.0816 2.39088 18.4723 2.85963 18.0504L21.0003 2.20664C21.5159 1.73789 21.5628 0.941015 21.1409 0.42539C20.6721 -0.0902346 19.8753 -0.137109 19.3596 0.284766L1.21901 16.1754C-0.374742 17.5816 -0.421616 19.9254 1.17213 21.3785L19.3128 37.7848Z"
+                  fill="#A4A4A4"
+                />
+              </svg>
+            </div>
+            <p class="voltar-text">Voltar</p>
+          </div>
+          <div class="professor-content">
+            <img
+						:src="verificarUrl(professor.foto_professor)"
+						alt="Foto do Professor"
+					/>
+            <h1>{{ professor.nome_professor }}</h1>
+            <h3>Faculdade do Gama</h3>
+            <div class="selectdiv">
+              <label class="selecionarmaterias">Selecione uma matéria</label>
+                <select v-model="materia" class="select-box">
+                  <option class="opcao" value="">TODAS</option>
+                  <option
+                    v-for="materia in professor.materias"
+                    :key="materia.cod_materia"
+                    :value="materia.cod_materia"
+                  >
+                  {{ materia.nome_materia }}
+                </option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="materia-details-rating3">
+          <div class="materias-ministradas">
+            <svg width="50" height="50" viewBox="0 0 367 367" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M299.005 367H65.3151C56.9006 367 50.0781 360.178 50.0781 351.763V15.237C50.0781 6.82176 56.8999 0 65.3151 0H299.005C318.609 0 334.558 15.9487 334.558 35.5524V331.448C334.558 351.051 318.609 367 299.005 367Z" fill="#102C46"/>
+            <path d="M299.005 0H192.319V367H299.005C318.609 367 334.558 351.051 334.558 331.448V35.5524C334.558 15.9487 318.609 0 299.005 0Z" fill="#008E4A"/>
+            <path d="M192.319 198.541C155.916 198.541 126.301 168.925 126.301 132.523C126.301 96.121 155.916 66.5051 192.319 66.5051C228.721 66.5051 258.337 96.1203 258.337 132.523C258.336 168.925 228.72 198.541 192.319 198.541Z" fill="#E8E8E8"/>
+            <path d="M237.506 259.371H147.131C138.717 259.371 131.895 252.55 131.895 244.135C131.895 235.72 138.716 228.898 147.131 228.898H237.506C245.92 228.898 252.743 235.719 252.743 244.135C252.743 252.55 245.921 259.371 237.506 259.371Z" fill="#E8E8E8"/>
+            <path d="M237.506 300.495H147.131C138.717 300.495 131.895 293.673 131.895 285.258C131.895 276.843 138.716 270.021 147.131 270.021H237.506C245.92 270.021 252.743 276.843 252.743 285.258C252.743 293.672 245.921 300.495 237.506 300.495Z" fill="#E8E8E8"/>
+            <path d="M82.9522 77.08H47.6793C39.2649 77.08 32.4424 70.2582 32.4424 61.843C32.4424 53.4278 39.2641 46.6061 47.6793 46.6061H82.9522C91.3667 46.6061 98.1891 53.4278 98.1891 61.843C98.1891 70.2582 91.3667 77.08 82.9522 77.08Z" fill="#A9C5FC"/>
+            <path d="M82.9522 137.909H47.6793C39.2649 137.909 32.4424 131.087 32.4424 122.672C32.4424 114.257 39.2641 107.435 47.6793 107.435H82.9522C91.3667 107.435 98.1891 114.257 98.1891 122.672C98.1891 131.087 91.3667 137.909 82.9522 137.909Z" fill="#A9C5FC"/>
+            <path d="M82.9522 198.736H47.6793C39.2649 198.736 32.4424 191.914 32.4424 183.499C32.4424 175.084 39.2641 168.262 47.6793 168.262H82.9522C91.3667 168.262 98.1891 175.084 98.1891 183.499C98.1891 191.915 91.3667 198.736 82.9522 198.736Z" fill="#A9C5FC"/>
+            <path d="M82.9522 259.564H47.6793C39.2649 259.564 32.4424 252.742 32.4424 244.327C32.4424 235.913 39.2641 229.09 47.6793 229.09H82.9522C91.3667 229.09 98.1891 235.912 98.1891 244.327C98.1891 252.742 91.3667 259.564 82.9522 259.564Z" fill="#A9C5FC"/>
+            <path d="M82.9522 320.392H47.6793C39.2649 320.392 32.4424 313.571 32.4424 305.155C32.4424 296.74 39.2641 289.918 47.6793 289.918H82.9522C91.3667 289.918 98.1891 296.74 98.1891 305.155C98.1891 313.571 91.3667 320.392 82.9522 320.392Z" fill="#A9C5FC"/>
+            <path d="M192.319 66.5051V198.54C228.721 198.54 258.337 168.925 258.337 132.522C258.336 96.1203 228.72 66.5051 192.319 66.5051Z" fill="#E8E8E8"/>
+            <path d="M237.506 228.898H192.319V259.371H237.506C245.92 259.371 252.743 252.55 252.743 244.135C252.743 235.72 245.921 228.898 237.506 228.898Z" fill="#E8E8E8"/>
+            <path d="M237.506 270.021H192.319V300.494H237.506C245.92 300.494 252.743 293.672 252.743 285.257C252.743 276.843 245.921 270.021 237.506 270.021Z" fill="#E8E8E8"/>
+            </svg>
+            <p>Matérias Ministradas</p>
+            <p v-if="professor.medias">{{ (professor.medias.media_nota_total / 2).toFixed(2) }}/5</p>
+          </div>
+          <p
+            v-for="materia in professor.materias"
+            :key="materia.cod_materia"
+            :value="materia.cod_materia"
+            class="p-materia"
+          >
+            {{ materia.nome_materia }} {{ materia.cod_materia }}
+          </p>
+        </div>
+
+        <div class="contato">
+          <div class="materia-details-rating4">
+            <div>
+              <h2>CONTATOS</h2>
+              <p>E-mail: danielsundfeld@gmail.com</p>
+              <p>Sala: FGA/UED 36</p>
+              <button>Entre em contato</button>
+            </div>
+          </div>
+          <div class="materia-details-rating4">
+            <div>
+              <p>GRADUAÇÕES</p>
+              <p>Graduação 1</p>
+              <p>Graduação 2</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+			<div class="wrapper">
+        <div class="materia-details-rating5">
+          5
+        </div>
+        <div class="materia-details-rating6">
+          6
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -178,13 +284,186 @@ export default {
 </script>
 
 <style scoped>
-.professores {
-  height: 100vh;
+.materias-ministradas{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p-materia{
+  padding: 20px;
+  background-color: white
+}
+.selectdiv {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.selecionarmaterias {
+	font-size: 1.4rem;
+	font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: 100;
+  margin-bottom: 2px;
+}
+.select-box {
+	appearance: none;
+	padding: 1rem 0 1rem 1rem;
+	font-size: 1.4rem;
+	width: 20vw;
+	border-radius: 1.3rem;
+	background-color: rgba(236, 236, 236, 0.129);
+	color: #fff;
+	transition: all 0.3s ease;
+	cursor: pointer;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	font-family: "Open Sans", sans-serif;
+	outline: none;
 }
 
-@media only screen and (max-width: 1128px) {
-  .professores{
-    height: 100%;
-  }
+.select-box:hover {
+	transform: scale(1.02);
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
+
+select option {
+	background-color: #ffffff;
+  color: #000;
+}
+.professor-content img{
+  width: 90px; 
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.professor-content h1{
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8rem
+}
+.professor-content h3{
+  color: #ffffff;
+  font-weight: 200;
+  opacity: .6;
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem
+}
+.materia-wrapper {
+	background: -webkit-linear-gradient(
+		90deg,
+		hsla(209, 63%, 17%, 1) 0%,
+		hsla(183, 71%, 16%, 1) 100%
+	);
+	width: 100%;
+	height: 100%;
+  padding: 20px 0 20px 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.contato{
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  gap: 20px;
+}
+.wrapper{
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+.info-materia {
+	width: 90%;
+	height: 96%;
+	max-width: 1200px;
+	max-height: 1200px;
+	display: flex;
+  flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+.materia-details-rating5 {
+	width: 53vw;
+	height: 40.5vh;
+	background-color: rgba(236, 236, 236, 0.129);
+	border-radius: 20px;
+	position: relative;
+	padding: 4rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+.materia-details-rating6 {
+	width: 100%;
+	height: 40.5vh;
+	background-color: rgba(236, 236, 236, 0.129);
+	border-radius: 20px;
+	position: relative;
+	padding: 4rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+.materia-details-rating2{
+  width: 39%;
+	height: 50vh;
+	background-color: rgba(236, 236, 236, 0.129);
+	border-radius: 20px;
+	position: relative;
+	padding: 4rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+  justify-content: center;
+}
+.materia-details-rating3{
+  width: 39%;
+	height: 50vh;
+	background-color: rgba(236, 236, 236, 0.129);
+	border-radius: 20px;
+	position: relative;
+	padding: 4rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+.materia-details-rating4{
+  width: 100%;
+	height: 100%;
+	background-color: rgba(236, 236, 236, 0.129);
+	border-radius: 20px;
+	position: relative;
+	padding: 4rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+}
+.voltar {
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	margin-bottom: 10px;
+	height: 20px;
+	gap: 5px;
+	cursor: pointer;
+}
+.voltar-text {
+	font-family: "Inter", sans-serif;
+	font-size: 1.4rem;
+	margin: 0;
+	color: rgb(242, 242, 242, 0.758);
+}
+
+.icon svg {
+	width: 1.4rem;
+	height: 1.4rem;
+}
+.icon svg path {
+	fill: rgb(242, 242, 242, 0.758);
+}
+
 </style>
