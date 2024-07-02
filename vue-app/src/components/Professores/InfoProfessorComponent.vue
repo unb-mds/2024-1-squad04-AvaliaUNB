@@ -417,6 +417,7 @@ export default {
 			professor: Object,
 			materia: "",
 			comentariosCurtidos: [],
+			isLikeDislikeInProgress: false,
 		};
 	},
 
@@ -501,40 +502,58 @@ export default {
 		},
 
 		async handleDislike(cod_comentario) {
-			const comentariosDescriptografados = await descriptarDados(
-				sessionStorage.getItem("likes_dislikes_professores")
-			);
-			const result = await verificacaoDislike(
-				comentariosDescriptografados,
-				cod_comentario
-			);
-			const comentario = this.professor.avaliacoes.find(
-				(avaliacao) => avaliacao.cod_comentario === cod_comentario
-			);
-			if (comentario) {
-				comentario.num_likes += result.num_likes;
-				comentario.num_dislikes += result.num_dislikes;
+			if (this.isLikeDislikeInProgress) return;
+
+			this.isLikeDislikeInProgress = true;
+			try {
+				const comentariosDescriptografados = await descriptarDados(
+					sessionStorage.getItem("likes_dislikes_professores")
+				);
+				const result = await verificacaoDislike(
+					comentariosDescriptografados,
+					cod_comentario
+				);
+				const comentario = this.professor.avaliacoes.find(
+					(avaliacao) => avaliacao.cod_comentario === cod_comentario
+				);
+				if (comentario) {
+					comentario.num_likes += result.num_likes;
+					comentario.num_dislikes += result.num_dislikes;
+				}
+				await this.getComentariosCurtidosPeloUsuario();
+			} catch (error) {
+				console.error("Erro ao processar dislike:", error);
+			} finally {
+				this.isLikeDislikeInProgress = false;
 			}
-			await this.getComentariosCurtidosPeloUsuario();
 		},
 		async handleLike(cod_comentario) {
-			const comentariosDescriptografados = await descriptarDados(
-				sessionStorage.getItem("likes_dislikes_professores")
-			);
-			const result = await verificacaoCurtida(
-				comentariosDescriptografados,
-				cod_comentario
-			);
-			const comentario = this.professor.avaliacoes.find(
-				(avaliacao) => avaliacao.cod_comentario === cod_comentario
-			);
-			if (comentario) {
-				comentario.num_likes += result.num_likes;
-				comentario.num_dislikes += result.num_dislikes;
-			}
-			await this.getComentariosCurtidosPeloUsuario();
-		},
+			if (this.isLikeDislikeInProgress) return; // Se uma operação já estiver em andamento, saia
 
+			this.isLikeDislikeInProgress = true; // Indique que a operação está em andamento
+
+			try {
+				const comentariosDescriptografados = await descriptarDados(
+					sessionStorage.getItem("likes_dislikes_professores")
+				);
+				const result = await verificacaoCurtida(
+					comentariosDescriptografados,
+					cod_comentario
+				);
+				const comentario = this.professor.avaliacoes.find(
+					(avaliacao) => avaliacao.cod_comentario === cod_comentario
+				);
+				if (comentario) {
+					comentario.num_likes += result.num_likes;
+					comentario.num_dislikes += result.num_dislikes;
+				}
+				await this.getComentariosCurtidosPeloUsuario();
+			} catch (error) {
+				console.error("Erro ao processar like:", error);
+			} finally {
+				this.isLikeDislikeInProgress = false; // Redefina a flag ao final da operação
+			}
+		},
 		async getComentariosCurtidosPeloUsuario() {
 			this.comentariosCurtidos = await descriptarDados(
 				sessionStorage.getItem("likes_dislikes_professores")
