@@ -68,16 +68,19 @@
 									</div>
 								</div>
 
-								<div class="graduacao-cursada">
+								<div class="graduacao-cursada" v-if="professor.graduacoes">
 									<div class="container-linha-info">
 										<img
 											src="../../assets/icons/avaliacao/icon-formacao-professor.svg"
 											alt=""
 										/>
-										<p class="info-text">
-											2003-2007: Ciência da Computação
-											<br />
-											Universidade de Brasília
+										<p
+											class="info-text"
+											v-for="graduacao in professor.graduacoes"
+											:key="graduacao.cod_graduacao"
+											:value="graduacao.cod_graduacao"
+										>
+											{{ graduacao.graduacao }}
 										</p>
 									</div>
 								</div>
@@ -92,7 +95,7 @@
 											src="../../assets/icons/avaliacao/icon-email-professor.svg"
 											alt=""
 										/>
-										<p>daniel.sundfeld@unb.br</p>
+										<p>{{ professor.email_professor }}</p>
 									</div>
 								</div>
 
@@ -103,7 +106,9 @@
 											src="../../assets/icons/avaliacao/icon-localizacao-sala-professor.svg"
 											alt=""
 										/>
-										<p id="ajuste-sala-professor">FGA/UED36</p>
+										<p id="ajuste-sala-professor">
+											{{ professor.sala_professor }}
+										</p>
 									</div>
 								</div>
 							</div>
