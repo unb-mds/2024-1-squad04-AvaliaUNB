@@ -125,3 +125,10 @@ CREATE TABLE usuario (
     curso VARCHAR(100),
     foto_url VARCHAR(500)
 );
+
+CREATE TABLE professor_graduacoes (
+    cod_graduacao INT AUTO_INCREMENT PRIMARY KEY,
+    cod_professor VARCHAR(255),
+    graduacao VARCHAR(255),
+    FOREIGN KEY (cod_professor) REFERENCES professor(cod_professor) ON DELETE CASCADE ON UPDATE CASCADE
+);
