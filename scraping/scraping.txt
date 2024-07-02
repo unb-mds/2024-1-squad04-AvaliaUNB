@@ -1,0 +1,1 @@
+Esses são os arquivos que realizam o scraping da página de listagem de professores, conforme vimos a necessidade de mais informações, fomos adicionando outros scripts
