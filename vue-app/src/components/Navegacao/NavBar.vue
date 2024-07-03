@@ -22,6 +22,7 @@
 
 				<li class="item">
 					<img
+						@click.prevent="HandleMaterias"
 						class="icons-mobile"
 						src="../../assets/icons/menu_celular/icone-materias.svg"
 					/>
@@ -30,6 +31,7 @@
 
 				<li class="item">
 					<img
+						@click.prevent="HandleAvaliacao"
 						class="icons-mobile"
 						src="../../assets/icons/menu_celular/icone-avaliacao.svg"
 					/>

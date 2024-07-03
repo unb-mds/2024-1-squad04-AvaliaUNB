@@ -49,7 +49,8 @@
         </div>
         <div class="materia-details-rating3">
           <div class="materias-ministradas">
-            <svg width="50" height="50" viewBox="0 0 367 367" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <span>
+							<svg width="50" height="50" viewBox="0 0 367 367" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M299.005 367H65.3151C56.9006 367 50.0781 360.178 50.0781 351.763V15.237C50.0781 6.82176 56.8999 0 65.3151 0H299.005C318.609 0 334.558 15.9487 334.558 35.5524V331.448C334.558 351.051 318.609 367 299.005 367Z" fill="#102C46"/>
             <path d="M299.005 0H192.319V367H299.005C318.609 367 334.558 351.051 334.558 331.448V35.5524C334.558 15.9487 318.609 0 299.005 0Z" fill="#008E4A"/>
             <path d="M192.319 198.541C155.916 198.541 126.301 168.925 126.301 132.523C126.301 96.121 155.916 66.5051 192.319 66.5051C228.721 66.5051 258.337 96.1203 258.337 132.523C258.336 168.925 228.72 198.541 192.319 198.541Z" fill="#E8E8E8"/>
@@ -64,8 +65,9 @@
             <path d="M237.506 228.898H192.319V259.371H237.506C245.92 259.371 252.743 252.55 252.743 244.135C252.743 235.72 245.921 228.898 237.506 228.898Z" fill="#E8E8E8"/>
             <path d="M237.506 270.021H192.319V300.494H237.506C245.92 300.494 252.743 293.672 252.743 285.257C252.743 276.843 245.921 270.021 237.506 270.021Z" fill="#E8E8E8"/>
             </svg>
-            <p>Matérias Ministradas</p>
-            <p v-if="professor.medias">{{ (professor.medias.media_nota_total / 2).toFixed(2) }}/5</p>
+            <p class="materias">Matérias Ministradas</p>
+						</span>
+            <p class="media" v-if="professor.medias">{{ (professor.medias.media_nota_total / 2).toFixed(2) }}<span> / 5</span></p>
           </div>
           <p
             v-for="materia in professor.materias"
@@ -73,7 +75,8 @@
             :value="materia.cod_materia"
             class="p-materia"
           >
-            {{ materia.nome_materia }} {{ materia.cod_materia }}
+            <a class="nome-materia">{{ materia.nome_materia }}</a>
+						<a class="cod-materia">{{ materia.cod_materia }}</a>
           </p>
         </div>
 
@@ -284,14 +287,40 @@ export default {
 </script>
 
 <style scoped>
+.nome-materia{
+	font-weight: 400;
+	opacity: .7;
+}
+.cod-materia, .media{
+	font-weight: 700;
+}
+.media{
+	font-size: 2.3rem;
+}
 .materias-ministradas{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	color: white;
+	font-size: 2rem;
+	font-weight: 600;
+	gap: 80px;
+	font-family: "Inter", sans-serif;
+}
+.media span{
+	font-size: 1.4rem;
+	font-weight: 300;
 }
 .p-materia{
   padding: 20px;
-  background-color: white
+	border-radius: 15px;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	font-family: "Inter", sans-serif;
+	font-size: 1.2rem;
+	align-items: center;
+	background-color: rgba(236, 236, 236, 0.129);
 }
 .selectdiv {
 	display: flex;
@@ -364,6 +393,7 @@ select option {
 .contato{
   display: flex;
   flex-direction: column;
+	height: 100%;
   width: 20vw;
   gap: 20px;
 }
@@ -416,7 +446,14 @@ select option {
 	flex-direction: column;
   justify-content: center;
 }
+.materia-details-rating3::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* Opcional */
+}
 .materia-details-rating3{
+	overflow-y: scroll;
+	-ms-overflow-style: none;
+	scrollbar-width: none;
   width: 39%;
 	height: 50vh;
 	background-color: rgba(236, 236, 236, 0.129);
@@ -429,7 +466,7 @@ select option {
 }
 .materia-details-rating4{
   width: 100%;
-	height: 100%;
+	height: 23.4vh;
 	background-color: rgba(236, 236, 236, 0.129);
 	border-radius: 20px;
 	position: relative;
