@@ -290,7 +290,6 @@
                 <span class="nota-total-criterio">/ 5</span>
               </div>
             </div>
-
             <div class="notas">
               <p class="nome-criterio">Nota Método de Ensino:</p>
               <div class="stars-nota">
@@ -330,7 +329,133 @@
           </div>
         </div>
 
-        <div class="materia-details-rating6">6</div>
+        <div class="materia-details-rating6">
+					<h3 class="h3-avaliacao">Avaliações</h3>
+					<div id="teacher-review">
+					<div
+						id="avaliacoes" class="section"
+						v-if="professor.avaliacoes && professor.avaliacoes.length > 0"
+					>
+						<div
+							v-for="avaliacao in professor.avaliacoes"
+							:key="avaliacao.usuario.matricula"
+							class="avaliacao"
+						>
+							<div class="container-avaliacao">
+								<div id="foto-de-usuario-container">
+									<div id="card-user-container">
+										<div id="avaliacao-nome">
+											<p>
+												{{ avaliacao.usuario.nome_usuario }}
+											</p>
+										</div>
+										<div id="avaliacao-codigo">
+											<p>{{ avaliacao.cod_materia }}</p>
+										</div>
+									</div>
+									<div id="foto-de-usuario">
+										<img
+											:src="verificarUrlUsuario(avaliacao.usuario.foto_url)"
+											@error="carregarImgAlternativa"
+											alt="Foto de Perfil"
+										/>
+									</div>
+								</div>
+								<div class="five-estrelas">
+									<img
+										v-for="n in 5"
+										:key="n"
+										src="../assets/icons/avaliacao/icone-estrela-azul-pagina-individual-professores.svg"
+										alt=""
+										class="estrela"
+										:class="getStarClass(n, avaliacao.nota_total)"
+									/>
+								</div>
+
+								<div id="avaliacao-comentario">
+									<p>{{ avaliacao.comentario }}</p>
+								</div>
+
+								<div id="avaliacao-icons">
+									<div
+										id="like-container"
+										@click="
+											handleLike(avaliacao.cod_comentario, avaliacao.num_likes)
+										"
+									>
+										<div id="avaliacao-likes">
+											<p>{{ avaliacao.num_likes }}</p>
+										</div>
+										<div
+											id="like-icon"
+											:class="{ liked: isLiked(avaliacao.cod_comentario) }"
+										>
+											<svg
+												width="17"
+												height="17"
+												viewBox="0 0 17 17"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<path
+													d="M5.94287 13.0973V5.90059C5.94287 5.61726 6.02787 5.34101 6.1837 5.10726L8.11745 2.23143C8.42204 1.77101 9.17995 1.44518 9.82454 1.68601C10.5187 1.91976 10.9791 2.69893 10.8304 3.39309L10.462 5.70934C10.4337 5.92184 10.4904 6.11309 10.6108 6.26184C10.7312 6.39643 10.9083 6.48143 11.0995 6.48143H14.0108C14.5704 6.48143 15.052 6.70809 15.3354 7.10476C15.6045 7.48726 15.6541 7.98309 15.477 8.48601L13.7345 13.7914C13.515 14.6698 12.5587 15.3852 11.6095 15.3852H8.84704C8.37245 15.3852 7.70662 15.2223 7.40204 14.9177L6.49537 14.2164C6.14829 13.9543 5.94287 13.5364 5.94287 13.0973Z"
+													fill="#171717"
+													fill-opacity="0.5"
+												/>
+												<path
+													d="M3.6905 4.51953H2.96091C1.863 4.51953 1.41675 4.94453 1.41675 5.99286V13.1187C1.41675 14.167 1.863 14.592 2.96091 14.592H3.6905C4.78841 14.592 5.23466 14.167 5.23466 13.1187V5.99286C5.23466 4.94453 4.78841 4.51953 3.6905 4.51953Z"
+													fill="#171717"
+													fill-opacity="0.5"
+												/>
+											</svg>
+										</div>
+									</div>
+
+									<div
+										id="dislike-container"
+										@click="handleDislike(avaliacao.cod_comentario)"
+									>
+										<div id="avaliacao-deslikes">
+											<p>{{ avaliacao.num_dislikes }}</p>
+										</div>
+										<div
+											id="dislike-icon"
+											:class="{
+												disliked: isDisliked(avaliacao.cod_comentario),
+											}"
+										>
+											<svg
+												width="17"
+												height="17"
+												viewBox="0 0 17 17"
+												fill="none"
+												xmlns="http://www.w3.org/2000/svg"
+											>
+												<g transform="scale(-1, -1) translate(-17, -20)">
+													<path
+														d="M5.94287 13.0973V5.90059C5.94287 5.61726 6.02787 5.34101 6.1837 5.10726L8.11745 2.23143C8.42204 1.77101 9.17995 1.44518 9.82454 1.68601C10.5187 1.91976 10.9791 2.69893 10.8304 3.39309L10.462 5.70934C10.4337 5.92184 10.4904 6.11309 10.6108 6.26184C10.7312 6.39643 10.9083 6.48143 11.0995 6.48143H14.0108C14.5704 6.48143 15.052 6.70809 15.3354 7.10476C15.6045 7.48726 15.6541 7.98309 15.477 8.48601L13.7345 13.7914C13.515 14.6698 12.5587 15.3852 11.6095 15.3852H8.84704C8.37245 15.3852 7.70662 15.2223 7.40204 14.9177L6.49537 14.2164C6.14829 13.9543 5.94287 13.5364 5.94287 13.0973Z"
+														fill="#171717"
+														fill-opacity="0.5"
+													/>
+													<path
+														d="M3.6905 4.51953H2.96091C1.863 4.51953 1.41675 4.94453 1.41675 5.99286V13.1187C1.41675 14.167 1.863 14.592 2.96091 14.592H3.6905C4.78841 14.592 5.23466 14.167 5.23466 13.1187V5.99286C5.23466 4.94453 4.78841 4.51953 3.6905 4.51953Z"
+														fill="#171717"
+														fill-opacity="0.5"
+													/>
+												</g>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="p-avaliacao" v-else>
+						<p>Nenhuma avaliação disponível.</p>
+					</div>
+				</div>
+				</div>
+
       </div>
     </div>
   </div>
@@ -510,6 +635,97 @@ export default {
 </script>
 
 <style scoped>
+.h3-avaliacao{
+	font-size: 2.3rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.p-avaliacao{
+	font-size: 1.8rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+.section{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+.avaliacao {
+	background-color: rgb(235, 235, 235);
+	height: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	padding: 1.5rem;
+	border-radius: 8px;
+}
+
+.avaliacao p {
+	margin: 5px 0;
+}
+
+#avaliacao-codigo p {
+	padding-top: 3px;
+}
+
+#avaliacao-nome {
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+#avaliacao-icons {
+	display: flex;
+	justify-content: space-between;
+}
+
+#foto-de-usuario-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+#card-user-container {
+	display: flex;
+	flex-direction: column;
+}
+
+#foto-de-usuario {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	height: fit-content;
+}
+
+#foto-de-usuario img {
+	width: 5rem;
+	height: 5rem;
+	border-radius: 5rem;
+}
+
+#like-container,
+#dislike-container {
+	display: flex;
+	width: 50%;
+}
+
+#like-icon,
+#dislike-icon {
+	padding-left: 5%;
+}
+
+#like-icon.liked path {
+	fill: #013d2c;
+}
+
+#dislike-icon.disliked path {
+	fill: #013d2c;
+}
 .notas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -576,6 +792,7 @@ export default {
   padding: 15px;
   border-radius: 10px;
   transition: all 0.3s ease;
+	width: 14vw;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
@@ -587,7 +804,6 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 .nome-materia {
   font-weight: 400;
@@ -747,11 +963,12 @@ select option {
   background-color: rgba(236, 236, 236, 0.129);
   border-radius: 20px;
   position: relative;
-  padding: 4rem;
+	overflow: scroll;
+  padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .materia-details-rating2 {
@@ -768,7 +985,9 @@ select option {
   align-items: center;
 }
 .materia-details-rating3::-webkit-scrollbar,
-.materia-details-rating5::-webkit-scrollbar {
+.materia-details-rating5::-webkit-scrollbar,
+.materia-details-rating4::-webkit-scrollbar,
+.materia-details-rating6::-webkit-scrollbar {
   width: 0px;
   background: transparent; /* Opcional */
 }
@@ -776,7 +995,7 @@ select option {
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
-  width: 39%;
+  width: 33vw;
   height: 50vh;
   background-color: rgba(236, 236, 236, 0.129);
   border-radius: 20px;
@@ -790,11 +1009,13 @@ select option {
 }
 .materia-details-rating4 {
   width: 100%;
-  height: 23.4vh;
+	overflow-y: scroll;
+  height: 22.6vh;
   background-color: rgba(236, 236, 236, 0.129);
   border-radius: 20px;
   position: relative;
-  padding: 4rem;
+	padding-top: 60px;
+	padding-bottom: 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -827,5 +1048,37 @@ select option {
 }
 .icon svg path {
   fill: rgb(242, 242, 242, 0.758);
+}
+
+
+@media (max-width: 1760px){
+	.estrela{
+		width: 2.2rem;
+	}
+}
+@media (max-width: 1550px){
+	.estrela{
+		width: 2rem;
+	}
+}
+@media (max-width: 1000px){
+	.estrela{
+		width: 1.7rem;
+	}
+	.nota-criterio{
+		font-size: 2.3rem;
+	}
+	.notas{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media (max-width: 550px){
+	.notas{
+		grid-template-columns: 1fr;
+	}
+	.estrela{
+		height: 5rem;
+		width: 1.7rem;
+	}
 }
 </style>
