@@ -4,7 +4,7 @@
 		<div class="search">
 			<BarraDePesquisaComponente @search="handleSearch" />
 		</div>
-		<LoadingComponent v-if="loading" :isLoading="loading"/>
+		<LoadingComponent v-if="loading" :isLoading="loading" />
 		<div v-if="!loading" class="listagem-materias">
 			<CardListagemMateriasComponente
 				v-for="(materia, index) in filteredMaterias.slice(0, 10)"
@@ -12,14 +12,11 @@
 				:materia="materia"
 			/>
 		</div>
-
-		<FooterBar />
 	</div>
 </template>
 
 <script>
 import NavBar from "../components/Navegacao/NavBar.vue";
-import FooterBar from "../components/Navegacao/FooterBar.vue";
 import { obterInformacoesMaterias } from "@/service/materia/ManipularDadosMateriaListagem";
 import CardListagemMateriasComponente from "../components/Materias/CardListagemMateriasComponent.vue";
 import BarraDePesquisaComponente from "../components/Navegacao/BarraDePesquisaComponent.vue";
@@ -28,7 +25,6 @@ import LoadingComponent from "@/components/Navegacao/LoadingComponent.vue";
 export default {
 	components: {
 		NavBar,
-		FooterBar,
 		CardListagemMateriasComponente,
 		BarraDePesquisaComponente,
 		LoadingComponent,
@@ -97,6 +93,9 @@ export default {
 }
 
 .materias {
+	min-height: 100vh;
+	position: relative;
+	flex: 1;
 	gap: 30px;
 	background: hsla(209, 63%, 17%, 1);
 	background: linear-gradient(

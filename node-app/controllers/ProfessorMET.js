@@ -117,6 +117,8 @@ export const getProfessorById = (app, sequelize) => {
 			const sqlQuery = `
         SELECT 
           p.nome AS nome_professor,
+          p.email AS email_professor,
+          p.sala AS sala_professor,
           p.cod_professor AS cod_professor,
           p.foto_url AS foto_professor,
           (
@@ -128,6 +130,14 @@ export const getProfessorById = (app, sequelize) => {
             INNER JOIN materia m ON pm.cod_materia = m.cod_materia
             WHERE pm.cod_professor = p.cod_professor
           ) AS materias,
+           (
+        SELECT JSON_ARRAYAGG(JSON_OBJECT(
+            'cod_graduacao', gp.cod_graduacao,
+            'graduacao', gp.graduacao
+          ))
+            FROM professor_graduacoes gp
+            WHERE gp.cod_professor = p.cod_professor
+        ) AS graduacoes,
           (
             SELECT JSON_ARRAYAGG(JSON_OBJECT(
               'cod_materia', pau.cod_materia,

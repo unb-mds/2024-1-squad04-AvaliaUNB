@@ -62,7 +62,9 @@
 					</div>
 				</div>
 				<LoadingComponent class="loading" v-if="loading" :isLoading="loading" />
-				<button class="veja-mais">Veja Mais</button>
+				<button class="veja-mais" @click.prevent="HandleMaterias">
+					Veja Mais
+				</button>
 			</div>
 		</div>
 		<FooterBar />
@@ -123,6 +125,10 @@ export default {
 	methods: {
 		async HandleProfessors() {
 			router.push({ name: "professor" });
+		},
+
+		async HandleMaterias() {
+			router.push({ name: "materia" });
 		},
 	},
 };

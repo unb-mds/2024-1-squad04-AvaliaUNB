@@ -125,6 +125,7 @@ export default {
 		return {
 			avaliacaoState: this.avaliacao,
 			comentariosCurtidos: [],
+			isLikeDislikeInProgress: false,
 		};
 	},
 
@@ -161,31 +162,50 @@ export default {
 			return url_profile_picture;
 		},
 		async handleLike(cod_comentario) {
-			const comentariosDescriptografados = await descriptarDados(
-				sessionStorage.getItem("likes_dislikes_materias")
-			);
-			const result = await verificacaoCurtida(
-				comentariosDescriptografados,
-				cod_comentario
-			);
-			this.avaliacaoState.num_likes += result.num_likes;
-			this.avaliacaoState.num_dislikes += result.num_dislikes;
+			if (this.isLikeDislikeInProgress) return;
 
-			await this.getComentariosCurtidosPeloUsuario();
+			this.isLikeDislikeInProgress = true;
+
+			try {
+				const comentariosDescriptografados = await descriptarDados(
+					sessionStorage.getItem("likes_dislikes_materias")
+				);
+				const result = await verificacaoCurtida(
+					comentariosDescriptografados,
+					cod_comentario
+				);
+				this.avaliacaoState.num_likes += result.num_likes;
+				this.avaliacaoState.num_dislikes += result.num_dislikes;
+
+				await this.getComentariosCurtidosPeloUsuario();
+			} catch (error) {
+				console.error("Erro ao processar like:", error);
+			} finally {
+				this.isLikeDislikeInProgress = false;
+			}
 		},
-
 		async handleDislike(cod_comentario) {
-			const comentariosDescriptografados = await descriptarDados(
-				sessionStorage.getItem("likes_dislikes_materias")
-			);
-			const result = await verificacaoDislike(
-				comentariosDescriptografados,
-				cod_comentario
-			);
-			this.avaliacaoState.num_likes += result.num_likes;
-			this.avaliacaoState.num_dislikes += result.num_dislikes;
+			if (this.isLikeDislikeInProgress) return;
 
-			await this.getComentariosCurtidosPeloUsuario();
+			this.isLikeDislikeInProgress = true;
+
+			try {
+				const comentariosDescriptografados = await descriptarDados(
+					sessionStorage.getItem("likes_dislikes_materias")
+				);
+				const result = await verificacaoDislike(
+					comentariosDescriptografados,
+					cod_comentario
+				);
+				this.avaliacaoState.num_likes += result.num_likes;
+				this.avaliacaoState.num_dislikes += result.num_dislikes;
+
+				await this.getComentariosCurtidosPeloUsuario();
+			} catch (error) {
+				console.error("Erro ao processar dislike:", error);
+			} finally {
+				this.isLikeDislikeInProgress = false;
+			}
 		},
 
 		async getComentariosCurtidosPeloUsuario() {

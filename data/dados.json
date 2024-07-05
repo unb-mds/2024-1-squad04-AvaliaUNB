@@ -1,0 +1,4038 @@
+{
+  "professores": [
+    {
+      "nome": "ALESSANDRO BORGES DE SOUSA OLIVEIRA",
+      "codigo": "1281464",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "EQUIPAMENTOS TERMOFLUIDOS AUTOMOTIVOS",
+            "codigo": "FGA0076",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROJETO DE ELEMENTOS AUTOMOTIVOS",
+            "codigo": "FGA0190",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "EQUIPAMENTOS TERMOFLUIDOS AUTOMOTIVOS",
+            "codigo": "FGA0076",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROJETO DE ELEMENTOS AUTOMOTIVOS",
+            "codigo": "FGA0190",
+            "carga_horaria": "90h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "ALEX REIS",
+      "codigo": "1036116",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "INSTALAÇÕES ELÉTRICAS EM SISTEMAS DE ENERGIA",
+            "codigo": "FGA0301",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 2",
+            "codigo": "FGA0250",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 2",
+            "codigo": "FGA0250",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "SISTEMAS DE ENERGIA SOLAR E EÓLICA",
+            "codigo": "FGA0025",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "ANDRE BARROS DE SALES",
+      "codigo": "1314342",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "INTERAÇÃO HUMANO COMPUTADOR",
+            "codigo": "FGA0173",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "REQUISITOS DE SOFTWARE",
+            "codigo": "FGA0172",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "INTERAÇÃO HUMANO COMPUTADOR",
+            "codigo": "FGA0173",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "REQUISITOS DE SOFTWARE",
+            "codigo": "FGA0172",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TOPICOS EM PSICOLOGIA DO DESENVOLVIMENTO",
+            "codigo": "PED0057",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "ANDREIA ALVES COSTA LINDINGER",
+      "codigo": "1905463",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PROCESSOS PETROQUÍMICOS",
+            "codigo": "FGA0047",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "QUIMICA GERAL EXPERIMENTAL",
+            "codigo": "IQD0126",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "QUÍMICA ORGÂNICA APLICADA À ENGENHARIA",
+            "codigo": "FGA0104",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PROCESSOS PETROQUÍMICOS",
+            "codigo": "FGA0047",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "QUIMICA GERAL TEORICA",
+            "codigo": "IQD0125",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "ANDRE LUIZ ALMEIDA PENNA",
+      "codigo": "3474580",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "TEORIA DE ELETROMAGNETISMO",
+            "codigo": "FGA0119",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "TEORIA DE ELETROMAGNETISMO",
+            "codigo": "FGA0119",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "ANDRE LUIZ PERON MARTINS LANNA",
+      "codigo": "1558082",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ORIENTAÇÃO A OBJETOS",
+            "codigo": "FGA0158",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÉCNICAS DE PROGRAMAÇÃO EM PLATAFORMAS EMERGENTES",
+            "codigo": "FGA0242",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ORIENTAÇÃO A OBJETOS",
+            "codigo": "FGA0158",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÉCNICAS DE PROGRAMAÇÃO EM PLATAFORMAS EMERGENTES",
+            "codigo": "FGA0242",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "ARTEM ANDRIANOV",
+      "codigo": "2016299",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "MECÂNICA DE ESTRUTURAS AEROESPACIAIS",
+            "codigo": "FGA0039",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "MECÂNICA DE ESTRUTURAS AERONÁUTICAS",
+            "codigo": "FGA0291",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "MECÂNICA DE ESTRUTURAS AEROESPACIAIS",
+            "codigo": "FGA0039",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "MECÂNICA DOS MATERIAIS COMPÓSITOS",
+            "codigo": "FGA0283",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "ARTUR ELIAS DE MORAIS BERTOLDI",
+      "codigo": "1759328",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "TÓPICOS ESPECIAIS 2 EM ENGENHARIA AEROESPACIAL",
+            "codigo": "FGA0105",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 1",
+            "codigo": "FGA0150",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "SISTEMAS DE PROPULSÃO LIQUIDA",
+            "codigo": "FGA0281",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "AUGUSTO CESAR DE MENDONCA BRASIL",
+      "codigo": "1337656",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "DINÂMICA DOS FLUÍDOS",
+            "codigo": "FGA0204",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "ECONOMIA DE ENERGIA",
+            "codigo": "FGA0265",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "ENGENHARIA ECONÔMICA",
+            "codigo": "FGA0133",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "FONTES DE ENERGIA E TECNOLOGIAS DE CONVERSÃO",
+            "codigo": "FGA0169",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "DINÂMICA DOS FLUÍDOS",
+            "codigo": "FGA0204",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "FONTES DE ENERGIA E TECNOLOGIAS DE CONVERSÃO",
+            "codigo": "FGA0169",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "INTRODUÇÃO À ENGENHARIA",
+            "codigo": "FGA0163",
+            "carga_horaria": "30h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "BRUNO CESAR RIBAS",
+      "codigo": "1937247",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "COMPILADORES 1",
+            "codigo": "FGA0003",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS DE ENGENHARIA DE SOFTWARE",
+            "codigo": "FGA0134",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ESTRUTURAS DE DADOS 2",
+            "codigo": "FGA0030",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS DE ENGENHARIA DE SOFTWARE",
+            "codigo": "FGA0134",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "BRUNO LUIZ PEREIRA",
+      "codigo": "1127536",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "SISTEMAS HIDRÁULICOS E PNEUMÁTICOS",
+            "codigo": "FGA0270",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS EM ENGENHARIA AUTOMOTIVA",
+            "codigo": "FGA0214",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "SISTEMAS HIDRÁULICOS E PNEUMÁTICOS",
+            "codigo": "FGA0270",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS EM ENGENHARIA AUTOMOTIVA",
+            "codigo": "FGA0214",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "CARLA SILVA ROCHA AGUIAR",
+      "codigo": "1877077",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "MÉTODOS DE DESENVOLVIMENTO DE SOFTWARE",
+            "codigo": "FGA0138",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 2",
+            "codigo": "FGA0250",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "MÉTODOS DE DESENVOLVIMENTO DE SOFTWARE",
+            "codigo": "FGA0138",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 2",
+            "codigo": "FGA0250",
+            "carga_horaria": "90h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "CARLA TATIANA MOTA ANFLOR",
+      "codigo": "1436914",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "INTRODUÇÃO À MECÂNICA DA FRATURA",
+            "codigo": "FGA0285",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROJETO DE SISTEMAS AUTOMOTIVOS",
+            "codigo": "FGA0228",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "INTRODUÇÃO À MECÂNICA DA FRATURA",
+            "codigo": "FGA0285",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROJETO DE SISTEMAS AUTOMOTIVOS",
+            "codigo": "FGA0228",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "CLAUDIA PATRICIA OCHOA DIAZ",
+      "codigo": "3132850",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "INSTRUMENTAÇÃO ELETRÔNICA PARA ENGENHARIA",
+            "codigo": "FGA0132",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PRÁTICA DE ELETRÔNICA DIGITAL 1",
+            "codigo": "FGA0071",
+            "carga_horaria": "30h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "INSTRUMENTAÇÃO ELETRÔNICA PARA ENGENHARIA",
+            "codigo": "FGA0132",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PRÁTICA DE ELETRÔNICA DIGITAL 1",
+            "codigo": "FGA0071",
+            "carga_horaria": "30h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "CRISTIANE SOARES RAMOS",
+      "codigo": "1771715",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "QUALIDADE DE SOFTWARE 1",
+            "codigo": "FGA0278",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "QUALIDADE DE SOFTWARE 1",
+            "codigo": "FGA0278",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "CRISTIANO JACQUES MIOSSO RODRIGUES MENDES",
+      "codigo": "2343453",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PROCESSAMENTO DE SINAIS",
+            "codigo": "FGA0219",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROCESSOS ESTOCÁSTICOS",
+            "codigo": "FGA0380",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "MODELAGEM DE SISTEMAS BIOLÓGICOS",
+            "codigo": "FGA0259",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROCESSAMENTO DE SINAIS",
+            "codigo": "FGA0219",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "DANIEL COSTA ARAUJO",
+      "codigo": "3157968",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PRINCÍPIOS DE COMUNICAÇÃO PARA ENGENHARIA",
+            "codigo": "FGA0092",
+            "carga_horaria": "75h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PRINCÍPIOS DE COMUNICAÇÃO PARA ENGENHARIA",
+            "codigo": "FGA0092",
+            "carga_horaria": "75h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "DANIEL MAURICIO MUNOZ ARBOLEDA",
+      "codigo": "1912898",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PROJETO COM CIRCUITOS RECONFIGURAVEIS",
+            "codigo": "FGA0198",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE ELETRÔNICA DIGITAL 2",
+            "codigo": "FGA0074",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PRÁTICA DE ELETRÔNICA DIGITAL 2",
+            "codigo": "FGA0072",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "SISTEMAS BIOINSPIRADOS APLICADOS A ENGENHARIA",
+            "codigo": "FGA0299",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE ELETRÔNICA DIGITAL 2",
+            "codigo": "FGA0074",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "DANIEL SUNDFELD LIMA",
+      "codigo": "1007019",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES",
+            "codigo": "CIC0004",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "FUNDAMENTOS DE SISTEMAS OPERACIONAIS",
+            "codigo": "FGA0170",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES",
+            "codigo": "CIC0004",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "FUNDAMENTOS DE SISTEMAS OPERACIONAIS",
+            "codigo": "FGA0170",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "DIOGO CAETANO GARCIA",
+      "codigo": "1838398",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 1",
+            "codigo": "FGA0150",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "SISTEMAS OPERACIONAIS EMBARCADOS",
+            "codigo": "FGA0103",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 1",
+            "codigo": "FGA0150",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "SISTEMAS OPERACIONAIS EMBARCADOS",
+            "codigo": "FGA0103",
+            "carga_horaria": "90h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "EBERTH DE ALMEIDA CORREA",
+      "codigo": "1645170",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "LABORATÓRIO DE ONDULATÓRIA E FÍSICA TÉRMICA PARA A ENGENHARIA",
+            "codigo": "FGA0107",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "ONDULATÓRIA E FÍSICA TÉRMICA PARA ENGENHARIA",
+            "codigo": "FGA0090",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.4": [
+          {
+            "nome": "LABORATÓRIO DE ONDULATÓRIA E FÍSICA TÉRMICA PARA A ENGENHARIA",
+            "codigo": "FGA0107",
+            "carga_horaria": "30h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "EDISON GUSTAVO CUEVA GALARRAGA",
+      "codigo": "1774518",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "TECNOLOGIAS DE FABRICAÇÃO 2",
+            "codigo": "FGA0056",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "TECNOLOGIAS DE FABRICAÇÃO 2",
+            "codigo": "FGA0056",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "EDSON ALVES DA COSTA JUNIOR",
+      "codigo": "2379711",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "MATEMÁTICA DISCRETA 2",
+            "codigo": "FGA0108",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS EM PROGRAMAÇÃO",
+            "codigo": "FGA0053",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "COMPILADORES 1",
+            "codigo": "FGA0003",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS EM PROGRAMAÇÃO",
+            "codigo": "FGA0053",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "ELAINE VENSON",
+      "codigo": "1912751",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "TESTES DE SOFTWARE",
+            "codigo": "FGA0238",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "TESTES DE SOFTWARE",
+            "codigo": "FGA0238",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "EMMANUEL PACHECO ROCHA LIMA",
+      "codigo": "1346254",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "LABORATÓRIO DE MATERIAIS DE CONSTRUÇÃO",
+            "codigo": "FGA0075",
+            "carga_horaria": "15h"
+          },
+          {
+            "nome": "MATERIAIS COMPOSTOS E PLÁSTICOS",
+            "codigo": "FGA0191",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE MATERIAIS DE CONSTRUÇÃO",
+            "codigo": "FGA0078",
+            "carga_horaria": "45h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "LABORATÓRIO DE MATERIAIS DE CONSTRUÇÃO",
+            "codigo": "FGA0075",
+            "carga_horaria": "15h"
+          },
+          {
+            "nome": "MATERIAIS COMPOSTOS E PLÁSTICOS",
+            "codigo": "FGA0191",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE MATERIAIS DE CONSTRUÇÃO",
+            "codigo": "FGA0078",
+            "carga_horaria": "45h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "ENEIDA GONZALEZ VALDES",
+      "codigo": "4279045",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "DESENHO INDUSTRIAL ASSISTIDO POR COMPUTADOR",
+            "codigo": "FGA0168",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "INTRODUÇÃO AO DESIGN E CONCEPÇÃO DE VEÍCULOS",
+            "codigo": "FGA0155",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "DESENHO INDUSTRIAL ASSISTIDO POR COMPUTADOR",
+            "codigo": "FGA0168",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "INTRODUÇÃO AO DESIGN E CONCEPÇÃO DE VEÍCULOS",
+            "codigo": "FGA0155",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "EULER DE VILHENA GARCIA",
+      "codigo": "1652716",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "INSTRUMENTAÇÃO BIOMÉDICA 2",
+            "codigo": "FGA0258",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE CIRCUITOS ELETRÔNICOS 1",
+            "codigo": "FGA0067",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "INOVAÇÃO",
+            "codigo": "FGA0181",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "INSTRUMENTAÇÃO BIOMÉDICA 1",
+            "codigo": "FGA0222",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE CIRCUITOS ELETRÔNICOS 1",
+            "codigo": "FGA0067",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "EVANDRO LEONARDO SILVA TEIXEIRA",
+      "codigo": "2772128",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ELETRÔNICA VEICULAR",
+            "codigo": "FGA0226",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "ENGENHARIA DE SOFTWARE AUTOMOTIVO",
+            "codigo": "FGA0131",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ELETRÔNICA VEICULAR",
+            "codigo": "FGA0226",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "ENGENHARIA DE SOFTWARE AUTOMOTIVO",
+            "codigo": "FGA0131",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "FABIANA FREITAS MENDES",
+      "codigo": "1596344",
+      "disciplinas": {
+        "2023.2": [
+          {
+            "nome": "ORIENTAÇÃO A OBJETOS",
+            "codigo": "FGA0158",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.1": [
+          {
+            "nome": "ORIENTAÇÃO A OBJETOS",
+            "codigo": "FGA0158",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "FABIANO ARAUJO SOARES",
+      "codigo": "1780244",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ELEMENTOS E MÉTODOS EM ELETRÔNICA",
+            "codigo": "FGA0166",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "INTELIGÊNCIA ARTIFICIAL",
+            "codigo": "FGA0221",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ELEMENTOS E MÉTODOS EM ELETRÔNICA",
+            "codigo": "FGA0166",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "INTELIGÊNCIA ARTIFICIAL",
+            "codigo": "FGA0221",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "FABIO ALFAIA DA CUNHA",
+      "codigo": "2650831",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "EQUIPAMENTOS TERMOFLUIDOS AUTOMOTIVOS",
+            "codigo": "FGA0076",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TRANSFERENCIA DE CALOR",
+            "codigo": "ENM0071",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "EQUIPAMENTOS TERMOFLUIDOS AUTOMOTIVOS",
+            "codigo": "FGA0076",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TRANSFERENCIA DE CALOR",
+            "codigo": "ENM0071",
+            "carga_horaria": "90h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "FABIO CORDEIRO DE LISBOA",
+      "codigo": "1897366",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ARQUITETURA DE MOTORES DE COMBUSTÃO INTERNA",
+            "codigo": "FGA0194",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "CENTRAIS DE GERAÇÃO TERMOELÉTRICA",
+            "codigo": "FGA0251",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "ENGENHARIA DE MANUTENÇÃO",
+            "codigo": "FGA0284",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ARQUITETURA DE MOTORES DE COMBUSTÃO INTERNA",
+            "codigo": "FGA0194",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "ENGENHARIA DE MANUTENÇÃO",
+            "codigo": "FGA0284",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "FABIO MACEDO MENDES",
+      "codigo": "2541812",
+      "disciplinas": {
+        "2021.2": [
+          {
+            "nome": "ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES",
+            "codigo": "CIC0004",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "COMPILADORES 1",
+            "codigo": "FGA0003",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2021.1": [
+          {
+            "nome": "ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES",
+            "codigo": "CIC0004",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "COMPILADORES 1",
+            "codigo": "FGA0003",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "ESTÁGIO SUPERVISIONADO",
+            "codigo": "FGA0021",
+            "carga_horaria": "210h"
+          },
+          {
+            "nome": "TRABALHO DE CONCLUSÃO DE CURSO 1",
+            "codigo": "FGA0009",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TRABALHO DE CONCLUSÃO DE CURSO 2",
+            "codigo": "FGA0011",
+            "carga_horaria": "90h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "FABRICIO ATAIDES BRAZ",
+      "codigo": "1984632",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES",
+            "codigo": "CIC0004",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES",
+            "codigo": "CIC0004",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "APRENDIZADO DE MÁQUINA",
+            "codigo": "FGA0083",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "FELIPE CHAGAS STORTI",
+      "codigo": "2319383",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "CENTRAIS DE GERAÇÃO TERMOELÉTRICA",
+            "codigo": "FGA0251",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "ENGENHARIA DE PETRÓLEO E GÁS",
+            "codigo": "FGA0175",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "FENOMENOS DE TRANSPORTE",
+            "codigo": "ENM0080",
+            "carga_horaria": "75h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ENGENHARIA DE PETRÓLEO E GÁS",
+            "codigo": "FGA0175",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "FENOMENOS DE TRANSPORTE",
+            "codigo": "ENM0080",
+            "carga_horaria": "75h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "FELIX MARTIN CARBAJAL GAMARRA",
+      "codigo": "1796750",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "COMBUSTÍVEIS E BIOCOMBUSTÍVEIS",
+            "codigo": "FGA0156",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "QUIMICA GERAL EXPERIMENTAL",
+            "codigo": "IQD0126",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "QUIMICA GERAL TEORICA",
+            "codigo": "IQD0125",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "QUIMICA GERAL EXPERIMENTAL",
+            "codigo": "IQD0126",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "QUIMICA GERAL TEORICA",
+            "codigo": "IQD0125",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "FERNANDO PAIVA SCARDUA",
+      "codigo": "3172149",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ENGENHARIA E AMBIENTE",
+            "codigo": "FGA0161",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "INTRODUÇÃO A GESTÃO AMBIENTAL",
+            "codigo": "CEM0054",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "REGULAÇÃO AMBIENTAL NO SETOR ENERGÉTICO",
+            "codigo": "FGA0130",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ENGENHARIA E AMBIENTE",
+            "codigo": "FGA0161",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "INTRODUÇÃO A GESTÃO AMBIENTAL",
+            "codigo": "CEM0054",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "REGULAÇÃO AMBIENTAL NO SETOR ENERGÉTICO",
+            "codigo": "FGA0130",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "FERNANDO WILLIAM CRUZ",
+      "codigo": "1252015",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "FUNDAMENTOS DE REDES DE COMPUTADORES",
+            "codigo": "FGA0211",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROGRAMAÇÃO PARA SISTEMAS PARALELOS E DISTRIBUÍDOS",
+            "codigo": "FGA0244",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "FUNDAMENTOS DE REDES DE COMPUTADORES",
+            "codigo": "FGA0211",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROGRAMAÇÃO PARA SISTEMAS PARALELOS E DISTRIBUÍDOS",
+            "codigo": "FGA0244",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "FLAVIO HENRIQUE JUSTINIANO RIBEIRO DA SILVA",
+      "codigo": "1679283",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "TEORIA DE ELETRICIDADE APLICADA",
+            "codigo": "FGA0086",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE SISTEMAS DE CONVERSÃO DE ENERGIA",
+            "codigo": "FGA0088",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "TEORIA DE ELETRICIDADE APLICADA",
+            "codigo": "FGA0086",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE SISTEMAS DE CONVERSÃO DE ENERGIA",
+            "codigo": "FGA0088",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "GABRIELA CUNHA POSSA",
+      "codigo": "1018416",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "CIÊNCIAS AEROESPACIAIS",
+            "codigo": "FGA0254",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "FISICA 1",
+            "codigo": "IFD0171",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "CIÊNCIAS AEROESPACIAIS",
+            "codigo": "FGA0254",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "FISICA 1",
+            "codigo": "IFD0171",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "GEORGE MARSICANO CORREA",
+      "codigo": "1313290",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "REQUISITOS DE SOFTWARE",
+            "codigo": "FGA0172",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "MÉTODOS DE DESENVOLVIMENTO DE SOFTWARE",
+            "codigo": "FGA0138",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "REQUISITOS DE SOFTWARE",
+            "codigo": "FGA0172",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "GERARDO ANTONIO IDROBO PIZO",
+      "codigo": "2822138",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PRÁTICA DE ELETROMAGNETISMO",
+            "codigo": "FGA0120",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "PRÁTICA DE FÍSICA DOS DISPOSITIVOS ELETRÔNICOS",
+            "codigo": "FGA0100",
+            "carga_horaria": "30h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PRÁTICA DE ELETROMAGNETISMO",
+            "codigo": "FGA0120",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "PRÁTICA DE FÍSICA DOS DISPOSITIVOS ELETRÔNICOS",
+            "codigo": "FGA0100",
+            "carga_horaria": "30h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "GILMAR SILVA BESERRA",
+      "codigo": "2475115",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PRÁTICA DE ELETRÔNICA DIGITAL 2",
+            "codigo": "FGA0072",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "TEORIA DE CIRCUITOS ELETRÔNICOS 2",
+            "codigo": "FGA0068",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PROJETO DE CIRCUITOS INTEGRADOS DIGITAIS",
+            "codigo": "FGA0201",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE CIRCUITOS ELETRÔNICOS 2",
+            "codigo": "FGA0068",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "GIOVANNI ALMEIDA SANTOS",
+      "codigo": "1769608",
+      "disciplinas": {
+        "2023.1": [
+          {
+            "nome": "ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES",
+            "codigo": "CIC0004",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 2",
+            "codigo": "FGA0250",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2022.2": [
+          {
+            "nome": "ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES",
+            "codigo": "CIC0004",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "SISTEMAS DE BANCO DE DADOS 2",
+            "codigo": "FGA0060",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "GLAUCENY CIRNE DE MEDEIROS",
+      "codigo": "1646200",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ENGENHARIA ECONÔMICA",
+            "codigo": "FGA0133",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "MECANICA DOS SÓLIDOS 1 PARA ENGENHARIA",
+            "codigo": "FGA0154",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ENGENHARIA ECONÔMICA",
+            "codigo": "FGA0133",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "MECANICA DOS SÓLIDOS 1 PARA ENGENHARIA",
+            "codigo": "FGA0154",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "GLAUCO VITOR PEDROSA",
+      "codigo": "3064724",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ORIENTAÇÃO A OBJETOS",
+            "codigo": "FGA0158",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "SISTEMAS DE BANCO DE DADOS 1",
+            "codigo": "FGA0137",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "MATEMÁTICA DISCRETA 1",
+            "codigo": "FGA0085",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "GUILLERMO ALVAREZ BESTARD",
+      "codigo": "1399631",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ELETRÔNICA EMBARCADA",
+            "codigo": "FGA0096",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS EM ELETRONICA",
+            "codigo": "FGA0261",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ELETRÔNICA EMBARCADA",
+            "codigo": "FGA0096",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS EM ELETRONICA",
+            "codigo": "FGA0261",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "HENRIQUE GOMES DE MOURA",
+      "codigo": "1769345",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "INTEGRAÇÃO E TESTES",
+            "codigo": "FGA0232",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "ORIENTAÇÃO A OBJETOS",
+            "codigo": "FGA0158",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROJETO DE ESTRUTURAS DE VEICULOS",
+            "codigo": "FGA0267",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "INTEGRAÇÃO E TESTES",
+            "codigo": "FGA0232",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "ORIENTAÇÃO A OBJETOS",
+            "codigo": "FGA0158",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROJETO DE ESTRUTURAS DE VEICULOS",
+            "codigo": "FGA0267",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "HENRIQUE MARRA TAIRA MENEGAZ",
+      "codigo": "2269423",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PRÁTICA DE ELETRÔNICA DIGITAL 1",
+            "codigo": "FGA0071",
+            "carga_horaria": "30h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PRÁTICA DE ELETRÔNICA DIGITAL 1",
+            "codigo": "FGA0071",
+            "carga_horaria": "30h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "HILMER RODRIGUES NERI",
+      "codigo": "1780591",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ENGENHARIA DE PRODUTO DE SOFTWARE",
+            "codigo": "FGA0206",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "MÉTODOS DE DESENVOLVIMENTO DE SOFTWARE",
+            "codigo": "FGA0138",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ENGENHARIA DE PRODUTO DE SOFTWARE",
+            "codigo": "FGA0206",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "MÉTODOS DE DESENVOLVIMENTO DE SOFTWARE",
+            "codigo": "FGA0138",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "HIMILSYS HERNANDEZ GONZALEZ",
+      "codigo": "2518384",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "DESENHO INDUSTRIAL ASSISTIDO POR COMPUTADOR",
+            "codigo": "FGA0168",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "DESENHO INDUSTRIAL ASSISTIDO POR COMPUTADOR",
+            "codigo": "FGA0168",
+            "carga_horaria": "90h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "JHON NERO VAZ GOULART",
+      "codigo": "1693584",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "FENOMENOS DE TRANSPORTE",
+            "codigo": "ENM0080",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "MÁQUINAS DE FLUIDO",
+            "codigo": "FGA0091",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "FENOMENOS DE TRANSPORTE",
+            "codigo": "ENM0080",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "MÁQUINAS DE FLUIDO",
+            "codigo": "FGA0091",
+            "carga_horaria": "90h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "JOHN LENON CARDOSO GARDENGHI",
+      "codigo": "3089262",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ESTRUTURAS DE DADOS 2",
+            "codigo": "FGA0030",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ESTRUTURAS DE DADOS 2",
+            "codigo": "FGA0030",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "FUNDAMENTOS DE ARQUITETURA DE COMPUTADORES",
+            "codigo": "FGA0142",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "JORGE ANDRES CORMANE ANGARITA",
+      "codigo": "2721661",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "LABORATÓRIO DE ELETRICIDADE APLICADA",
+            "codigo": "FGA0087",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "SISTEMAS DE ENERGIA SOLAR E EÓLICA",
+            "codigo": "FGA0025",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE ELETRICIDADE APLICADA",
+            "codigo": "FGA0086",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "LABORATÓRIO DE ELETRICIDADE APLICADA",
+            "codigo": "FGA0087",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "SISTEMAS DE ENERGIA SOLAR E EÓLICA",
+            "codigo": "FGA0025",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE ELETRICIDADE APLICADA",
+            "codigo": "FGA0086",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "JOSIANE DO SOCORRO AGUIAR DE SOUZA DE OLIVEIRA CAMPOS",
+      "codigo": "1772705",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "DESENVOLVIMENTO SUSTENTÁVEL",
+            "codigo": "FGA0174",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "ENGENHARIA E AMBIENTE",
+            "codigo": "FGA0161",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ENGENHARIA E AMBIENTE",
+            "codigo": "FGA0161",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "SISTEMAS DE INFORMAÇÃO GEOGRÁFICA PARA ENGENHARIA",
+            "codigo": "FGA0118",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "JULIANA PETROCCHI RODRIGUES",
+      "codigo": "1795655",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 1",
+            "codigo": "FGA0150",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TERMODINAMICA 1",
+            "codigo": "ENM0068",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 1",
+            "codigo": "FGA0150",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TERMODINAMICA 1",
+            "codigo": "ENM0068",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "JUNGPYO LEE",
+      "codigo": "2191904",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 1",
+            "codigo": "FGA0150",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROPULSÃO AEROESPACIAL",
+            "codigo": "FGA0052",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PROPULSÃO AEROESPACIAL",
+            "codigo": "FGA0052",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS 2 EM ENGENHARIA AEROESPACIAL",
+            "codigo": "FGA0105",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "LEANDRO XAVIER CARDOSO",
+      "codigo": "1127607",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "FISICA 1 EXPERIMENTAL",
+            "codigo": "IFD0173",
+            "carga_horaria": "30h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "FISICA 1 EXPERIMENTAL",
+            "codigo": "IFD0173",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "FUNDAMENTOS DE ENERGIA NUCLEAR",
+            "codigo": "FGA0117",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "LINDOMAR BOMFIM DE CARVALHO DE JESUS",
+      "codigo": "1773044",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "FISICA 1 EXPERIMENTAL",
+            "codigo": "IFD0173",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "MÉTODOS NUMÉRICOS PARA ENGENHARIA",
+            "codigo": "FGA0160",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "FISICA 1 EXPERIMENTAL",
+            "codigo": "IFD0173",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "INTRODUÇÃO À GEOMETRIA ANALÍTICA",
+            "codigo": "FGA0125",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "MÉTODOS NUMÉRICOS PARA ENGENHARIA",
+            "codigo": "FGA0160",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "LOANA NUNES VELASCO",
+      "codigo": "1157123",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "TEORIA DE CIRCUITOS ELETRÔNICOS 1",
+            "codigo": "FGA0067",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TRANSMISSÃO E DISTRIBUIÇÃO DE ENERGIA ELÉTRICA",
+            "codigo": "FGA0262",
+            "carga_horaria": "75h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "EFICIÊNCIA ENERGÉTICA EM INSTALAÇÕES ELÉTRICAS INDUSTRIAIS",
+            "codigo": "FGA0122",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "LABORATÓRIO DE ELETRICIDADE APLICADA",
+            "codigo": "FGA0087",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "TRANSMISSÃO E DISTRIBUIÇÃO DE ENERGIA ELÉTRICA",
+            "codigo": "FGA0262",
+            "carga_horaria": "75h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "LUCIANO EMIDIO NEVES DA FONSECA",
+      "codigo": "1866449",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "MÉTODOS NUMÉRICOS PARA ENGENHARIA",
+            "codigo": "FGA0160",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "SINAIS E SISTEMAS PARA ENGENHARIA",
+            "codigo": "FGA0102",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "TEORIA DE CIRCUITOS ELETRÔNICOS 1",
+            "codigo": "FGA0067",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.1": [
+          {
+            "nome": "MÉTODOS NUMÉRICOS PARA ENGENHARIA",
+            "codigo": "FGA0160",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "SINAIS E SISTEMAS PARA ENGENHARIA",
+            "codigo": "FGA0102",
+            "carga_horaria": "90h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "LUCIANO GONCALVES NOLETO",
+      "codigo": "2556079",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "DINÂMICA DOS FLUÍDOS",
+            "codigo": "FGA0204",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "SISTEMAS HIDROELÉTRICOS",
+            "codigo": "FGA0252",
+            "carga_horaria": "75h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "DINÂMICA DOS FLUÍDOS",
+            "codigo": "FGA0204",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "INTRODUÇÃO À ENGENHARIA",
+            "codigo": "FGA0163",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "SISTEMAS HIDROELÉTRICOS",
+            "codigo": "FGA0252",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS 1 EM ENGENHARIA DE ENERGIA",
+            "codigo": "FGA0235",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "LUIS FILOMENO DE JESUS FERNANDES",
+      "codigo": "3424071",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "COMPILADORES 1",
+            "codigo": "FGA0003",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PRINCÍPIOS DE CONTROLE",
+            "codigo": "FGA0093",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "TEORIA DE CIRCUITOS ELETRÔNICOS 1",
+            "codigo": "FGA0067",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "COMPILADORES 1",
+            "codigo": "FGA0003",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PRÁTICA DE CIRCUITOS ELETRÔNICOS 1",
+            "codigo": "FGA0069",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "PRINCÍPIOS DE CONTROLE",
+            "codigo": "FGA0093",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "TEORIA DE CIRCUITOS ELETRÔNICOS 1",
+            "codigo": "FGA0067",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "LUIZA YOKO TANEGUTI",
+      "codigo": "3731404",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "CÁLCULO 1",
+            "codigo": "MAT0025",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "CÁLCULO 2",
+            "codigo": "MAT0026",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "CÁLCULO 1",
+            "codigo": "MAT0025",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "CÁLCULO 2",
+            "codigo": "MAT0026",
+            "carga_horaria": "90h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "LUIZ CARLOS MIYADAIRA RIBEIRO JUNIOR",
+      "codigo": "1722813",
+      "disciplinas": {
+        "2014.2": [
+          {
+            "nome": "MEDIÇÃO E ANÁLISE",
+            "codigo": "FGA0209",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2014.1": [
+          {
+            "nome": "MEDIÇÃO E ANÁLISE",
+            "codigo": "FGA0209",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "MANUEL NASCIMENTO DIAS BARCELOS JUNIOR",
+      "codigo": "1652569",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "CENTRAIS DE GERAÇÃO TERMOELÉTRICA",
+            "codigo": "FGA0251",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "FUNDAMENTOS DO MÉTODO DOS ELEMENTOS FINITOS",
+            "codigo": "FGA0286",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "MÉTODOS NUMÉRICOS PARA ENGENHARIA",
+            "codigo": "FGA0160",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "MARCELINO MONTEIRO DE ANDRADE",
+      "codigo": "3343211",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PRÁTICA DE ELETRÔNICA DIGITAL 1",
+            "codigo": "FGA0071",
+            "carga_horaria": "30h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PRÁTICA DE ELETRÔNICA DIGITAL 1",
+            "codigo": "FGA0071",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "TOPICOS EM PSICOLOGIA DO DESENVOLVIMENTO",
+            "codigo": "PED0057",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "MARCELO BENTO DA SILVA",
+      "codigo": "1649346",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "QUIMICA GERAL EXPERIMENTAL",
+            "codigo": "IQD0126",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "QUIMICA GERAL TEORICA",
+            "codigo": "IQD0125",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "QUIMICA GERAL EXPERIMENTAL",
+            "codigo": "IQD0126",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "QUÍMICA ORGÂNICA APLICADA À ENGENHARIA",
+            "codigo": "FGA0104",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "MARCUS VINICIUS BATISTUTA",
+      "codigo": "2343624",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "TEORIA DE FÍSICA DOS DISPOSITIVOS ELETRÔNICOS",
+            "codigo": "FGA0101",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS EM ELETRONICA",
+            "codigo": "FGA0261",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ELETRÔNICA DE POTÊNCIA",
+            "codigo": "FGA0057",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE FÍSICA DOS DISPOSITIVOS ELETRÔNICOS",
+            "codigo": "FGA0101",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "MARCUS VINICIUS CHAFFIM COSTA",
+      "codigo": "1901903",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PROCESSAMENTO DIGITAL DE IMAGENS",
+            "codigo": "FGA0015",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "SINAIS E SISTEMAS PARA ENGENHARIA",
+            "codigo": "FGA0102",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "CODIFICAÇÃO E COMPRESSÃO DE SINAIS, IMAGENS E VÍDEO",
+            "codigo": "FGA0095",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "SINAIS E SISTEMAS PARA ENGENHARIA",
+            "codigo": "FGA0102",
+            "carga_horaria": "90h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "MARIA ALZIRA DE ARAUJO NUNES",
+      "codigo": "1734228",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ACÚSTICA E VIBRAÇÕES VEICULARES",
+            "codigo": "FGA0266",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "ENGENHARIA DE SEGURANÇA DO TRABALHO",
+            "codigo": "FGA0148",
+            "carga_horaria": "30h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ACÚSTICA E VIBRAÇÕES VEICULARES",
+            "codigo": "FGA0266",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "ENGENHARIA DE SEGURANÇA DO TRABALHO",
+            "codigo": "FGA0148",
+            "carga_horaria": "30h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "MARIA DEL PILAR HIDALGO FALLA",
+      "codigo": "1721557",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ANÁLISE INSTRUMENTAL DE COMBUSTÍVEIS",
+            "codigo": "FGA0177",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "BIORREFINARIAS",
+            "codigo": "FGA0236",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "BIORREFINARIAS",
+            "codigo": "FGA0236",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "QUIMICA GERAL EXPERIMENTAL",
+            "codigo": "IQD0126",
+            "carga_horaria": "30h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "MARIANA COSTA BERNARDES MATIAS",
+      "codigo": "1163784",
+      "disciplinas": {
+        "2021.1": [
+          {
+            "nome": "PRÁTICA DE ELETRÔNICA DIGITAL 1",
+            "codigo": "FGA0071",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "TRABALHO DE GRADUAÇÃO 1",
+            "codigo": "FTD0006",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "TRABALHO DE GRADUAÇÃO 2",
+            "codigo": "FTD0004",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2020.2": [
+          {
+            "nome": "PRÁTICA DE ELETRÔNICA DIGITAL 1",
+            "codigo": "FGA0071",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "TRABALHO DE GRADUAÇÃO 1",
+            "codigo": "FTD0006",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "TRABALHO DE GRADUAÇÃO 2",
+            "codigo": "FTD0004",
+            "carga_horaria": "90h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "MARIA VITORIA DUARTE FERRARI",
+      "codigo": "1797986",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ENGENHARIA E AMBIENTE",
+            "codigo": "FGA0161",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "GESTÃO AMBIENTAL NO SETOR ENERGÉTICO",
+            "codigo": "FGA0141",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ENGENHARIA E AMBIENTE",
+            "codigo": "FGA0161",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "GESTÃO AMBIENTAL NO SETOR ENERGÉTICO",
+            "codigo": "FGA0141",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "MARILIA MIRANDA FORTE GOMES",
+      "codigo": "2859300",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PROBABILIDADE E ESTATÍSTICA APLICADO A ENGENHARIA",
+            "codigo": "FGA0157",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PROBABILIDADE E ESTATÍSTICA APLICADO A ENGENHARIA",
+            "codigo": "FGA0157",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "MARIO DE OLIVEIRA ANDRADE",
+      "codigo": "1892915",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "EMPRESA JUNIOR 1",
+            "codigo": "FTD0008",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "GESTÃO DA PRODUÇÃO AUTOMOTIVA",
+            "codigo": "FGA0195",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "GESTÃO DA PRODUÇÃO E QUALIDADE",
+            "codigo": "FGA0184",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "EMPRESA JUNIOR 1",
+            "codigo": "FTD0008",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "GESTÃO DA PRODUÇÃO AUTOMOTIVA",
+            "codigo": "FGA0195",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "GESTÃO DA PRODUÇÃO E QUALIDADE",
+            "codigo": "FGA0184",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "MATEUS RODRIGUES MIRANDA",
+      "codigo": "1724779",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "DESENHO INDUSTRIAL ASSISTIDO POR COMPUTADOR",
+            "codigo": "FGA0168",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "ERGONOMIA DO PRODUTO",
+            "codigo": "FGA0152",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "DESENHO INDUSTRIAL ASSISTIDO POR COMPUTADOR",
+            "codigo": "FGA0168",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "ERGONOMIA DO PRODUTO",
+            "codigo": "FGA0152",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "MATHEUS BERNARDINI DE SOUZA",
+      "codigo": "1275682",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "CÁLCULO 1",
+            "codigo": "MAT0025",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "CÁLCULO 3",
+            "codigo": "MAT0027",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "CÁLCULO 1",
+            "codigo": "MAT0025",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "MATEMÁTICA DISCRETA 2",
+            "codigo": "FGA0108",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "MAURA ANGELICA MILFONT SHZU",
+      "codigo": "2583882",
+      "disciplinas": {
+        "2023.1": [
+          {
+            "nome": "ANÁLISE ESTRUTURAL MÉTODO DOS ELEMENTOS FINITOS",
+            "codigo": "FGA0229",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "MECANICA DOS SÓLIDOS 2 PARA ENGENHARIA",
+            "codigo": "FGA0179",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2022.2": [
+          {
+            "nome": "ANÁLISE ESTRUTURAL MÉTODO DOS ELEMENTOS FINITOS",
+            "codigo": "FGA0229",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "MECANICA DOS SÓLIDOS 2 PARA ENGENHARIA",
+            "codigo": "FGA0179",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "MAURICIO SERRANO",
+      "codigo": "1984262",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PROJETO DE ALGORITMOS",
+            "codigo": "FGA0124",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "SISTEMAS DE BANCO DE DADOS 1",
+            "codigo": "FGA0137",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PROJETO DE ALGORITMOS",
+            "codigo": "FGA0124",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "SISTEMAS DE BANCO DE DADOS 1",
+            "codigo": "FGA0137",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "MILENE SERRANO",
+      "codigo": "1984257",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ARQUITETURA E DESENHO DE SOFTWARE",
+            "codigo": "FGA0208",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PARADIGMAS DE PROGRAMAÇÃO",
+            "codigo": "FGA0210",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ARQUITETURA E DESENHO DE SOFTWARE",
+            "codigo": "FGA0208",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PARADIGMAS DE PROGRAMAÇÃO",
+            "codigo": "FGA0210",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "NILTON CORREIA DA SILVA",
+      "codigo": "1985245",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES",
+            "codigo": "CIC0004",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "ESTRUTURA DE DADOS E ALGORITMOS",
+            "codigo": "FGA0147",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES",
+            "codigo": "CIC0004",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "ESTRUTURA DE DADOS E ALGORITMOS",
+            "codigo": "FGA0147",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "OLEXIY SHYNKARENKO",
+      "codigo": "2017545",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "AERODINÂMICA DE SISTEMAS AEROESPACIAIS",
+            "codigo": "FGA0038",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "DINÂMICA DOS GASES PARA SISTEMAS AEROESPACIAIS",
+            "codigo": "FGA0043",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "AERODINÂMICA DE SISTEMAS AEROESPACIAIS",
+            "codigo": "FGA0038",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "DINÂMICA DOS GASES PARA SISTEMAS AEROESPACIAIS",
+            "codigo": "FGA0043",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "PATRICIA REGINA SOBRAL BRAGA",
+      "codigo": "1905478",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "INTRODUÇÃO À ENGENHARIA",
+            "codigo": "FGA0163",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "QUIMICA GERAL EXPERIMENTAL",
+            "codigo": "IQD0126",
+            "carga_horaria": "30h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ANÁLISE INSTRUMENTAL DE COMBUSTÍVEIS",
+            "codigo": "FGA0177",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "QUIMICA GERAL EXPERIMENTAL",
+            "codigo": "IQD0126",
+            "carga_horaria": "30h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "PAULA MEYER SOARES",
+      "codigo": "2104433",
+      "disciplinas": {
+        "2023.2": [
+          {
+            "nome": "ECONOMIA DE ENERGIA",
+            "codigo": "FGA0265",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "ENGENHARIA E AMBIENTE",
+            "codigo": "FGA0161",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "ENGENHARIA ECONÔMICA",
+            "codigo": "FGA0133",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.1": [
+          {
+            "nome": "ECONOMIA DE ENERGIA",
+            "codigo": "FGA0265",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "ENGENHARIA ECONÔMICA",
+            "codigo": "FGA0133",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PLANEJAMENTO E GESTÃO DE ENERGIA",
+            "codigo": "FGA0203",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "POLLIANA CANDIDA OLIVEIRA MARTINS",
+      "codigo": "1193378",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "MECÂNICA DO VÔO",
+            "codigo": "FGA0045",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS 3 EM ENGENHARIA AEROESPACIAL",
+            "codigo": "FGA0106",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "FUNDAMENTOS DO PROJETO DE AERONAVES",
+            "codigo": "FGA0282",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "MECÂNICA DO VÔO",
+            "codigo": "FGA0045",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "RAFAEL CASTILHO FARIA MENDES",
+      "codigo": "3295206",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 2",
+            "codigo": "FGA0250",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "PROPULSÃO AERONÁUTICA",
+            "codigo": "FGA0063",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 2",
+            "codigo": "FGA0250",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS 3 EM ENGENHARIA AEROESPACIAL",
+            "codigo": "FGA0106",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "RAFAEL MORGADO SILVA",
+      "codigo": "2486253",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "FISICA 1",
+            "codigo": "IFD0171",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "FISICA 1 EXPERIMENTAL",
+            "codigo": "IFD0173",
+            "carga_horaria": "30h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "FISICA 1",
+            "codigo": "IFD0171",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "FISICA 1 EXPERIMENTAL",
+            "codigo": "IFD0173",
+            "carga_horaria": "30h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "RAFAEL RODRIGUES DA SILVA",
+      "codigo": "2855005",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 1",
+            "codigo": "FGA0150",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "SISTEMAS DE CONTROLE AUTOMOTIVO",
+            "codigo": "FGA0040",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 1",
+            "codigo": "FGA0150",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "SISTEMAS DE CONTROLE AUTOMOTIVO",
+            "codigo": "FGA0040",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "REJANE MARIA DA COSTA FIGUEIREDO",
+      "codigo": "1650604",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "GESTÃO DA PRODUÇÃO E QUALIDADE",
+            "codigo": "FGA0184",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "INTERAÇÃO HUMANO COMPUTADOR",
+            "codigo": "FGA0173",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ENGENHARIA DE SOFTWARE EXPERIMENTAL",
+            "codigo": "FGA0275",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "GESTÃO DA PRODUÇÃO E QUALIDADE",
+            "codigo": "FGA0184",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "RENAN UTIDA BARBOSA FERREIRA",
+      "codigo": "1934635",
+      "disciplinas": {
+        "2022.1": [
+          {
+            "nome": "PRÁTICA DE CIRCUITOS ELETRÔNICOS 3",
+            "codigo": "FGA0098",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "SINAIS E SISTEMAS PARA ENGENHARIA",
+            "codigo": "FGA0102",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2021.2": [
+          {
+            "nome": "PRÁTICA DE CIRCUITOS ELETRÔNICOS 3",
+            "codigo": "FGA0098",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "SINAIS E SISTEMAS PARA ENGENHARIA",
+            "codigo": "FGA0102",
+            "carga_horaria": "90h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "RENATO CORAL SAMPAIO",
+      "codigo": "2216360",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "FUNDAMENTOS DE SISTEMAS EMBARCADOS",
+            "codigo": "FGA0109",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "GERÊNCIA DE CONFIGURAÇÃO E EVOLUÇÃO DE SOFTWARE",
+            "codigo": "FGA0240",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "FUNDAMENTOS DE SISTEMAS EMBARCADOS",
+            "codigo": "FGA0109",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "GERÊNCIA DE CONFIGURAÇÃO E EVOLUÇÃO DE SOFTWARE",
+            "codigo": "FGA0240",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "RENATO VILELA LOPES",
+      "codigo": "1855113",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "TEORIA DE ELETRÔNICA DIGITAL 1",
+            "codigo": "FGA0073",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "TEORIA DE ELETRÔNICA DIGITAL 1",
+            "codigo": "FGA0073",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "RHANDER VIANA",
+      "codigo": "1568990",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 2",
+            "codigo": "FGA0250",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "TECNOLOGIAS DE FABRICAÇÃO 1",
+            "codigo": "FGA0055",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 2",
+            "codigo": "FGA0250",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "TECNOLOGIAS DE FABRICAÇÃO 1",
+            "codigo": "FGA0055",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "RICARDO AJAX DIAS KOSLOSKI",
+      "codigo": "1905275",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "MÉTODOS DE DESENVOLVIMENTO DE SOFTWARE",
+            "codigo": "FGA0138",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 1",
+            "codigo": "FGA0150",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "MÉTODOS DE DESENVOLVIMENTO DE SOFTWARE",
+            "codigo": "FGA0138",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 1",
+            "codigo": "FGA0150",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "RICARDO MATOS CHAIM",
+      "codigo": "1334353",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ENGENHARIA DE PRODUTO DE SOFTWARE",
+            "codigo": "FGA0206",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ENGENHARIA ECONÔMICA",
+            "codigo": "FGA0133",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "RICARDO RAMOS FRAGELLI",
+      "codigo": "2344411",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "CÁLCULO 1",
+            "codigo": "MAT0025",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "INTRODUÇÃO À ENGENHARIA",
+            "codigo": "FGA0163",
+            "carga_horaria": "30h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "CÁLCULO 1",
+            "codigo": "MAT0025",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "INTRODUÇÃO À ENGENHARIA",
+            "codigo": "FGA0163",
+            "carga_horaria": "30h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "RITA DE CASSIA SILVA",
+      "codigo": "2493326",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "DINÂMICA DOS MECANISMOS",
+            "codigo": "FGA0023",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "MECANICA DOS SÓLIDOS 2 PARA ENGENHARIA",
+            "codigo": "FGA0179",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "DINÂMICA DOS MECANISMOS",
+            "codigo": "FGA0023",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "MECANICA DOS SÓLIDOS 2 PARA ENGENHARIA",
+            "codigo": "FGA0179",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "ROBERTO DE SOUZA BAPTISTA",
+      "codigo": "1264416",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PRÁTICA DE CIRCUITOS ELETRÔNICOS 1",
+            "codigo": "FGA0069",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS EM ELETRONICA",
+            "codigo": "FGA0261",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "INSTRUMENTAÇÃO BIOMÉDICA 1",
+            "codigo": "FGA0222",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "SINAIS E SISTEMAS PARA ENGENHARIA",
+            "codigo": "FGA0102",
+            "carga_horaria": "90h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "RODRIGO ANDRES MIRANDA CERDA",
+      "codigo": "1906134",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "MÉTODOS NUMÉRICOS PARA ENGENHARIA",
+            "codigo": "FGA0160",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROBABILIDADE E ESTATÍSTICA APLICADO A ENGENHARIA",
+            "codigo": "FGA0157",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "MÉTODOS NUMÉRICOS PARA ENGENHARIA",
+            "codigo": "FGA0160",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROBABILIDADE E ESTATÍSTICA APLICADO A ENGENHARIA",
+            "codigo": "FGA0157",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROPULSÃO AEROESPACIAL",
+            "codigo": "FGA0052",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS EM ENGENHARIA AEROESPACIAL",
+            "codigo": "FGA0037",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "RODRIGO ARBEY MUNOZ MENESES",
+      "codigo": "2934459",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "LABORATÓRIO DE MATERIAIS DE CONSTRUÇÃO",
+            "codigo": "FGA0075",
+            "carga_horaria": "15h"
+          },
+          {
+            "nome": "MÉTODOS EXPERIMENTAIS PARA ENGENHARIA",
+            "codigo": "FGA0188",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE MATERIAIS DE CONSTRUÇÃO",
+            "codigo": "FGA0078",
+            "carga_horaria": "45h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "LABORATÓRIO DE MATERIAIS DE CONSTRUÇÃO",
+            "codigo": "FGA0075",
+            "carga_horaria": "15h"
+          },
+          {
+            "nome": "MÉTODOS EXPERIMENTAIS PARA ENGENHARIA",
+            "codigo": "FGA0188",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE MATERIAIS DE CONSTRUÇÃO",
+            "codigo": "FGA0078",
+            "carga_horaria": "45h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "RONNE TOLEDO",
+      "codigo": "1081125",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "SISTEMAS AEROESPACIAIS",
+            "codigo": "FGA0008",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS 2 EM ENGENHARIA AEROESPACIAL",
+            "codigo": "FGA0105",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "SISTEMAS AEROESPACIAIS",
+            "codigo": "FGA0008",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "RONNI GERALDO GOMES DE AMORIM",
+      "codigo": "1803399",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "FISICA 1",
+            "codigo": "IFD0171",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "FISICA 1 EXPERIMENTAL",
+            "codigo": "IFD0173",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "FÍSICA QUÂNTICA",
+            "codigo": "IFD0372",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "INTRODUCAO A ALGEBRA LINEAR",
+            "codigo": "MAT0031",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TRABALHO DE CONCLUSÃO DE CURSO 1",
+            "codigo": "IFD0389",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "TRABALHO DE CONCLUSÃO DE CURSO 2",
+            "codigo": "IFD0390",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "FISICA 1",
+            "codigo": "IFD0171",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "FISICA 1 EXPERIMENTAL",
+            "codigo": "IFD0173",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "FUNDAMENTOS DE ENERGIA NUCLEAR",
+            "codigo": "FGA0117",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA ELETROMAGNÉTICA",
+            "codigo": "IFD0394",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TRABALHO DE CONCLUSÃO DE CURSO 1",
+            "codigo": "IFD0389",
+            "carga_horaria": "30h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "ROSEANY DE VASCONCELOS VIEIRA LOPES",
+      "codigo": "1795599",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "COMBUSTÍVEIS E BIOCOMBUSTÍVEIS",
+            "codigo": "FGA0156",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "QUIMICA GERAL EXPERIMENTAL",
+            "codigo": "IQD0126",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "QUÍMICA ORGÂNICA APLICADA À ENGENHARIA",
+            "codigo": "FGA0104",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "COMBUSTÍVEIS E BIOCOMBUSTÍVEIS",
+            "codigo": "FGA0156",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "QUIMICA GERAL EXPERIMENTAL",
+            "codigo": "IQD0126",
+            "carga_horaria": "30h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "RUDI HENRI VAN ELS",
+      "codigo": "2316997",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ECONOMIA DE ENERGIA",
+            "codigo": "FGA0265",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "ENGENHARIA ECONÔMICA",
+            "codigo": "FGA0133",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "INTRODUÇÃO À ENGENHARIA",
+            "codigo": "FGA0163",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "LABORATÓRIO DE ELETRICIDADE APLICADA",
+            "codigo": "FGA0087",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "LABORATÓRIO DE SISTEMAS DE CONVERSÃO DE ENERGIA",
+            "codigo": "FGA0089",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "SISTEMAS HIDROELÉTRICOS",
+            "codigo": "FGA0252",
+            "carga_horaria": "75h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "LABORATÓRIO DE ELETRICIDADE APLICADA",
+            "codigo": "FGA0087",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "LABORATÓRIO DE SISTEMAS DE CONVERSÃO DE ENERGIA",
+            "codigo": "FGA0089",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "SISTEMAS HIDROELÉTRICOS",
+            "codigo": "FGA0252",
+            "carga_horaria": "75h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "SALEH BARBOSA KHALIL",
+      "codigo": "1999691",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "DESENHO INDUSTRIAL ASSISTIDO POR COMPUTADOR",
+            "codigo": "FGA0168",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "SISTEMAS AUTOMOTIVOS",
+            "codigo": "FGA0167",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "DESENHO INDUSTRIAL ASSISTIDO POR COMPUTADOR",
+            "codigo": "FGA0168",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "SISTEMAS AUTOMOTIVOS",
+            "codigo": "FGA0167",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "SANDRA MARIA DA LUZ",
+      "codigo": "1720225",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "LABORATÓRIO DE MATERIAIS DE CONSTRUÇÃO",
+            "codigo": "FGA0075",
+            "carga_horaria": "15h"
+          },
+          {
+            "nome": "MATERIAIS COMPOSTOS E PLÁSTICOS",
+            "codigo": "FGA0191",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "LABORATÓRIO DE MATERIAIS DE CONSTRUÇÃO",
+            "codigo": "FGA0075",
+            "carga_horaria": "15h"
+          },
+          {
+            "nome": "MATERIAIS COMPOSTOS E PLÁSTICOS",
+            "codigo": "FGA0191",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS EM ENGENHARIA AUTOMOTIVA",
+            "codigo": "FGA0214",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "SANDRA MARIA FALEIROS LIMA",
+      "codigo": "2380139",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "HUMANIDADES E CIDADANIA",
+            "codigo": "FGA0164",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "HUMANIDADES E CIDADANIA",
+            "codigo": "FGA0164",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "SANDRO AUGUSTO PAVLIK HADDAD",
+      "codigo": "1781626",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PROJETO DE CIRCUITOS ELETRÔNICOS INTEGRADOS 2",
+            "codigo": "FGA0280",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "TÓPICOS ESPECIAIS EM ELETRONICA",
+            "codigo": "FGA0261",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "SEBASTIEN ROLAND MARIE JOSEPH RONDINEAU",
+      "codigo": "2193312",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "INTRODUÇÃO À FOTÔNICA E OPTRÔNICA",
+            "codigo": "FGA0292",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS EM ELETRONICA",
+            "codigo": "FGA0261",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ELETRÔNICA DE ALTA FREQUÊNCIA",
+            "codigo": "FGA0116",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TELECOMUNICAÇÕES ESPACIAIS",
+            "codigo": "FGA0300",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE ANTENAS",
+            "codigo": "DPG1078",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "SERGIO ANTONIO ANDRADE DE FREITAS",
+      "codigo": "1298865",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "APRENDIZADO DE MÁQUINA",
+            "codigo": "FGA0083",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "DESENVOLVIMENTO DE SOFTWARE",
+            "codigo": "FGA0084",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "INTERAÇÃO HUMANO COMPUTADOR",
+            "codigo": "FGA0173",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "DESENVOLVIMENTO DE SOFTWARE",
+            "codigo": "FGA0084",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "INTERAÇÃO HUMANO COMPUTADOR",
+            "codigo": "FGA0173",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "SERGIO HENRIQUE DA SILVA CARNEIRO",
+      "codigo": "2205442",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "DINÂMICA DE ESTRUTURAS AEROESPACIAIS",
+            "codigo": "FGA0050",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS 4 EM ENGENHARIA AEROESPACIAL",
+            "codigo": "FGA0121",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "DINÂMICA DE ESTRUTURAS AEROESPACIAIS",
+            "codigo": "FGA0050",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "MECANICA DOS SÓLIDOS 1 PARA ENGENHARIA",
+            "codigo": "FGA0154",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "VIBRAÇÕES DE SISTEMAS MECÂNICOS",
+            "codigo": "DPG1275",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "SUELIA DE SIQUEIRA RODRIGUES FLEURY ROSA",
+      "codigo": "2506617",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ANATOMIA E FISIOLOGIA HUMANA",
+            "codigo": "FGA0013",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 2",
+            "codigo": "FGA0250",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PRÁTICA DE CIRCUITOS ELETRÔNICOS 1",
+            "codigo": "FGA0069",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 2",
+            "codigo": "FGA0250",
+            "carga_horaria": "90h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "SUZANA MOREIRA AVILA",
+      "codigo": "2213675",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "DINÂMICA DE VEÍCULOS",
+            "codigo": "FGA0230",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "MECANICA DOS SÓLIDOS 1 PARA ENGENHARIA",
+            "codigo": "FGA0154",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "DINÂMICA DE VEÍCULOS",
+            "codigo": "FGA0230",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "MECANICA DOS SÓLIDOS 1 PARA ENGENHARIA",
+            "codigo": "FGA0154",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "TAIS CALLIERO TOGNETTI",
+      "codigo": "1840391",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "CÁLCULO 2",
+            "codigo": "MAT0026",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "INTRODUCAO A ALGEBRA LINEAR",
+            "codigo": "MAT0031",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "CÁLCULO 2",
+            "codigo": "MAT0026",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "INTRODUCAO A ALGEBRA LINEAR",
+            "codigo": "MAT0031",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "TATIANE DA SILVA EVANGELISTA",
+      "codigo": "1748086",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "CÁLCULO 1",
+            "codigo": "MAT0025",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "CÁLCULO 2",
+            "codigo": "MAT0026",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "CÁLCULO 1",
+            "codigo": "MAT0025",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "INTRODUCAO A ALGEBRA LINEAR",
+            "codigo": "MAT0031",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TOPICOS EM PSICOLOGIA DO DESENVOLVIMENTO",
+            "codigo": "PED0057",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "THIAGO FELIPPE KURUDEZ CORDEIRO",
+      "codigo": "1999853",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PRINCÍPIOS DE CONTROLE",
+            "codigo": "FGA0093",
+            "carga_horaria": "75h"
+          },
+          {
+            "nome": "PROJETO DE SISTEMAS DE CONTROLE",
+            "codigo": "FGA0044",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2022.1": [
+          {
+            "nome": "DESENHO INDUSTRIAL ASSISTIDO POR COMPUTADOR",
+            "codigo": "FGA0168",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "INTRODUÇÃO À ENGENHARIA",
+            "codigo": "FGA0163",
+            "carga_horaria": "30h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "TIAGO ALVES DA FONSECA",
+      "codigo": "1715832",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "FUNDAMENTOS DE ARQUITETURA DE COMPUTADORES",
+            "codigo": "FGA0142",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "FUNDAMENTOS DE REDES DE COMPUTADORES",
+            "codigo": "FGA0211",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "FUNDAMENTOS DE ARQUITETURA DE COMPUTADORES",
+            "codigo": "FGA0142",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "FUNDAMENTOS DE SISTEMAS OPERACIONAIS",
+            "codigo": "FGA0170",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "VANDOR ROBERTO VILARDI RISSOLI",
+      "codigo": "2102874",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "SISTEMAS DE BANCO DE DADOS 1",
+            "codigo": "FGA0137",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "SISTEMAS DE BANCO DE DADOS 2",
+            "codigo": "FGA0060",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES",
+            "codigo": "CIC0004",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "SISTEMAS DE BANCO DE DADOS 1",
+            "codigo": "FGA0137",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "SISTEMAS DE BANCO DE DADOS 2",
+            "codigo": "FGA0060",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "VANESSA MARIA DE CASTRO",
+      "codigo": "1821597",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "HUMANIDADES E CIDADANIA",
+            "codigo": "FGA0164",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "HUMANIDADES E CIDADANIA",
+            "codigo": "FGA0164",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "VINICIUS DE CARVALHO RISPOLI",
+      "codigo": "1769665",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "CÁLCULO 3",
+            "codigo": "MAT0027",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "FUNDAMENTOS DE VARIÁVEL COMPLEXA PARA ENGENHARIA",
+            "codigo": "FGA0066",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS EM MATEMÁTICA APLICADA",
+            "codigo": "FGA0034",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TRABALHO DE CONCLUSÃO DE CURSO 1",
+            "codigo": "IFD0389",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "TRABALHO DE CONCLUSÃO DE CURSO 2",
+            "codigo": "IFD0390",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.4": [
+          {
+            "nome": "FUNDAMENTOS MATEMÁTICOS DA FÍSICA A",
+            "codigo": "IFD0396",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "MATEMÁTICA DISCRETA 2",
+            "codigo": "FGA0108",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "WANDER CLEBER MARIA PEREIRA DA SILVA",
+      "codigo": "2241438",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PRODUTIVIDADE E PROFISSIONALISMO EM ENGENHARIA DE SOFTWARE",
+            "codigo": "FGA0274",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS DE ENGENHARIA DE SOFTWARE",
+            "codigo": "FGA0134",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS EM GOVERNANÇA DE TECNOLOGIA DA INFORMAÇÃO",
+            "codigo": "FGA0054",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "TÓPICOS ESPECIAIS DE ENGENHARIA DE SOFTWARE",
+            "codigo": "FGA0134",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS EM GOVERNANÇA DE TECNOLOGIA DA INFORMAÇÃO",
+            "codigo": "FGA0054",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "WELLINGTON AVELINO DO AMARAL",
+      "codigo": "1913187",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "PROJETOS DE CIRCUITOS INTEGRADOS 1",
+            "codigo": "FGA0017",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE CIRCUITOS ELETRÔNICOS 3",
+            "codigo": "FGA0099",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "PROJETOS DE CIRCUITOS INTEGRADOS 1",
+            "codigo": "FGA0017",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TEORIA DE CIRCUITOS ELETRÔNICOS 3",
+            "codigo": "FGA0099",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "WILLIAM REIS SILVA",
+      "codigo": "3056359",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "MECÂNICA DO VOO ESPACIAL",
+            "codigo": "FGA0048",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS EM ENGENHARIA AEROESPACIAL",
+            "codigo": "FGA0037",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "MECÂNICA DO VOO ESPACIAL",
+            "codigo": "FGA0048",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "PRINCÍPIOS DE CONTROLE",
+            "codigo": "FGA0093",
+            "carga_horaria": "75h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "WYTLER CORDEIRO DOS SANTOS",
+      "codigo": "1095582",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "FISICA 1",
+            "codigo": "IFD0171",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "FISICA 1 EXPERIMENTAL",
+            "codigo": "IFD0173",
+            "carga_horaria": "30h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "FISICA 1",
+            "codigo": "IFD0171",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "FISICA 1 EXPERIMENTAL",
+            "codigo": "IFD0173",
+            "carga_horaria": "30h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "YEVSEY YEHOSHUA SOBOLEVSKY",
+      "codigo": "1767089",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "FUNDAMENTOS DE EQUAÇÕES DIFERENCIAIS PARA ENGENHARIA",
+            "codigo": "FGA0006",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "INTRODUCAO A ALGEBRA LINEAR",
+            "codigo": "MAT0031",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "CÁLCULO 3",
+            "codigo": "MAT0027",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "INTRODUCAO A ALGEBRA LINEAR",
+            "codigo": "MAT0031",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "PAOLO GESSINI",
+      "codigo": "1742664",
+      "disciplinas": {
+        "2023.2": [
+          {
+            "nome": "TÓPICOS ESPECIAIS 2 EM ENGENHARIA AEROESPACIAL",
+            "codigo": "FGA0105",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "TÓPICOS ESPECIAIS EM ENGENHARIA AEROESPACIAL",
+            "codigo": "FGA0037",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.1": [
+          {
+            "nome": "MÁQUINAS DE FLUIDO",
+            "codigo": "FGA0091",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "PROJETO INTEGRADOR DE ENGENHARIA 2",
+            "codigo": "FGA0250",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "PROPULSÃO AEROESPACIAL",
+            "codigo": "FGA0052",
+            "carga_horaria": "90h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "CLENIO EMIDIO DA FONSECA",
+      "codigo": "3391740",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES",
+            "codigo": "CIC0004",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "FUNDAMENTOS DE REDES DE COMPUTADORES",
+            "codigo": "FGA0211",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "CRISTIANE LOESCH DE SOUZA COSTA",
+      "codigo": "3393841",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "MATEMÁTICA DISCRETA 1",
+            "codigo": "FGA0085",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "EUCLIDES DELGADO MARQUES SANT ANNA",
+      "codigo": "1303488",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ANÁLISE ESTRUTURAL MÉTODO DOS ELEMENTOS FINITOS",
+            "codigo": "FGA0229",
+            "carga_horaria": "60h"
+          },
+          {
+            "nome": "DESENHO INDUSTRIAL ASSISTIDO POR COMPUTADOR",
+            "codigo": "FGA0168",
+            "carga_horaria": "90h"
+          }
+        ],
+        "2023.4": [
+          {
+            "nome": "DESENHO INDUSTRIAL ASSISTIDO POR COMPUTADOR",
+            "codigo": "FGA0168",
+            "carga_horaria": "90h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "ROSE YURI SHIMIZU",
+      "codigo": "1276557",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES",
+            "codigo": "CIC0004",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "ESTRUTURA DE DADOS E ALGORITMOS",
+            "codigo": "FGA0147",
+            "carga_horaria": "60h"
+          }
+        ],
+        "2023.2": [
+          {
+            "nome": "ALGORITMOS E PROGRAMAÇÃO DE COMPUTADORES",
+            "codigo": "CIC0004",
+            "carga_horaria": "90h"
+          },
+          {
+            "nome": "ESTRUTURA DE DADOS E ALGORITMOS",
+            "codigo": "FGA0147",
+            "carga_horaria": "60h"
+          }
+        ]
+      }
+    },
+    {
+      "nome": "TIAGO MARTINS DE BRITO",
+      "codigo": "1279494",
+      "disciplinas": {
+        "2024.1": [
+          {
+            "nome": "FISICA 1 EXPERIMENTAL",
+            "codigo": "IFD0173",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "PRÁTICA DE CIRCUITOS ELETRÔNICOS 2",
+            "codigo": "FGA0070",
+            "carga_horaria": "30h"
+          },
+          {
+            "nome": "PRÁTICA DE ELETRÔNICA DIGITAL 1",
+            "codigo": "FGA0071",
+            "carga_horaria": "30h"
+          }
+        ]
+      }
+    }
+  ]
+}
