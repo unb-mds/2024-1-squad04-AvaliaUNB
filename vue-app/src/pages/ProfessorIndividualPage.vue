@@ -946,13 +946,6 @@ select option {
   justify-content: center;
   flex-direction: column;
 }
-.contato {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 20vw;
-  gap: 30px;
-}
 .wrapper {
   display: flex;
   width: 100%;
@@ -1031,10 +1024,17 @@ select option {
   justify-content: center;
   align-items: center;
 }
+.contato {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 20vw;
+  gap: 20px;
+}
 .materia-details-rating4 {
   width: 100%;
   overflow-y: scroll;
-  height: 22.6vh;
+  height: 100%;
   background-color: rgba(236, 236, 236, 0.129);
   border-radius: 20px;
   position: relative;
@@ -1096,27 +1096,39 @@ select option {
   }
 }
 @media only screen and (max-width: 700px) {
+  .select-box{
+    width: 40vw;
+  }
+  .materia-wrapper{
+    height: auto;
+  }
+  .info-materia{
+    height: fit-content;
+    max-height: max-content;
+  }
   .materia-details-rating2,
   .materia-details-rating3 {
     width: 100%;
   }
   .materia-details-rating2,
   .materia-details-rating3,
-  .materia-details-rating4,
   .materia-details-rating5,
   .materia-details-rating6 {
-    height: 100%;
+    height: fit-content;
+    width: 100%;
   }
   .contato {
-    height: fit-content;
     flex-direction: row;
     width: 100%;
+    height: 100%;
   }
   .wrapper {
     flex-direction: column;
+    height: fit-content;
   }
   .notas {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
   }
   .estrela {
     height: 5rem;
