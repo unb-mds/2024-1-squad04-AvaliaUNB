@@ -527,7 +527,8 @@ svg {
   filter: none;
 }
 
-.full-star path {
+.full-star path,
+.partial-star path {
   fill: rgb(245, 255, 112);
 }
 

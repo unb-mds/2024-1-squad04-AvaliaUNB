@@ -134,16 +134,19 @@
           <div class="materia-details-rating4">
             <div class="infos">
               <h2>CONTATOS</h2>
-              <p>E-mail: danielsundfeld@gmail.com</p>
-              <p>Sala: FGA/UED 36</p>
-              <button>Entre em contato</button>
+              <p>E-mail: {{ professor.email_professor }}</p>
+              <p>Sala: {{ professor.sala_professor }}</p>
+              <button @click="handleEntrarEmContato">
+                {{ copiarContato }}
+              </button>
             </div>
           </div>
           <div class="materia-details-rating4">
             <div class="infos">
               <p>GRADUAÇÕES</p>
-              <p>Graduação 1</p>
-              <p>Graduação 2</p>
+              <p v-for="graduacao in professor.graduacoes" :key="graduacao">
+                {{ graduacao.graduacao }}
+              </p>
             </div>
           </div>
         </div>
@@ -336,12 +339,12 @@
 
         <div class="materia-details-rating6">
           <h3 class="h3-avaliacao">AVALIAÇÕES</h3>
-          <div id="teacher-review">
-            <div
-              id="avaliacoes"
-              class="section"
-              v-if="professor.avaliacoes && professor.avaliacoes.length > 0"
-            >
+          <div
+            id="teacher-review"
+            v-if="professor.avaliacoes && professor.avaliacoes.length > 0"
+            class="avaliacaodiv"
+          >
+            <div id="avaliacoes" class="section">
               <div
                 v-for="avaliacao in professor.avaliacoes"
                 :key="avaliacao.usuario.matricula"
@@ -356,7 +359,7 @@
                         </p>
                       </div>
                       <div id="avaliacao-codigo">
-                        <p>{{ avaliacao.cod_materia }}</p>
+                        <p>{{ avaliacao.nome_materia }}</p>
                       </div>
                     </div>
                     <div id="foto-de-usuario">
@@ -367,24 +370,41 @@
                       />
                     </div>
                   </div>
-                  <div class="five-estrelas">
-                    <img
-                      v-for="n in 5"
-                      :key="n"
-                      src="../assets/icons/avaliacao/icone-estrela-azul-pagina-individual-professores.svg"
+                  <div class="five-estrelas" v-if="avaliacao">
+                    <svg
+                      v-for="(starClass, index) in getStarClassProfessor(
+                        avaliacao.nota_total / 2
+                      )"
+                      :key="index"
                       alt=""
                       class="estrela"
-                      :class="getStarClass(n, avaliacao.nota_total)"
-                    />
+                      :class="starClass"
+                      width="112"
+                      height="104"
+                      viewBox="0 0 112 104"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M63.7069 15.1759L71.8732 30.3947C72.9868 32.5132 75.9564 34.5453 78.462 34.9344L93.2634 37.2259C102.729
+ 38.6959 104.956 45.0947 98.1354 51.4071L86.6283 62.1294C84.6795 63.9453 83.6123 67.4474 84.2155 69.955L87.5099 
+ 83.2282C90.1083 93.7344 84.1227 97.7985 74.1468 92.3077L60.2733 84.655C57.7678 83.2715 53.6382 83.2715 51.0862
+  84.655L37.2127 92.3077C27.2832 97.7985 21.2513 93.6912 23.8497 83.2282L27.144 69.955C27.7472 67.4474 26.68
+   63.9453 24.7313 62.1294L13.2242 51.4071C6.44983 45.0947 8.63061 38.6959 18.0961 37.2259L32.8976 
+   34.9344C35.3568 34.5453 38.3263 32.5132 39.4399 30.3947L47.6063 15.1759C52.0606 6.91794 59.2989
+    6.91794 63.7069 15.1759Z"
+                        fill="#0a745b"
+                      />
+                    </svg>
                   </div>
 
                   <div id="avaliacao-comentario">
                     <p>{{ avaliacao.comentario }}</p>
                   </div>
 
-                  <div id="avaliacao-icons">
+                  <div class="reaction-buttons">
                     <div
-                      id="like-container"
+                      class="reaction"
                       @click="
                         handleLike(
                           avaliacao.cod_comentario,
@@ -392,16 +412,13 @@
                         )
                       "
                     >
-                      <div id="avaliacao-likes">
-                        <p>{{ avaliacao.num_likes }}</p>
-                      </div>
                       <div
-                        id="like-icon"
+                        class="like-button"
                         :class="{ liked: isLiked(avaliacao.cod_comentario) }"
                       >
                         <svg
-                          width="17"
-                          height="17"
+                          width="20"
+                          height="20"
                           viewBox="0 0 17 17"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
@@ -418,50 +435,54 @@
                           />
                         </svg>
                       </div>
+                      <span class="like-count">{{ avaliacao.num_likes }}</span>
                     </div>
-
                     <div
-                      id="dislike-container"
-                      @click="handleDislike(avaliacao.cod_comentario)"
+                      class="reaction"
+                      @click="
+                        handleDislike(
+                          avaliacao.cod_comentario,
+                          avaliacao.num_likes
+                        )
+                      "
                     >
-                      <div id="avaliacao-deslikes">
-                        <p>{{ avaliacao.num_dislikes }}</p>
-                      </div>
                       <div
-                        id="dislike-icon"
+                        class="deslike-button"
                         :class="{
                           disliked: isDisliked(avaliacao.cod_comentario),
                         }"
                       >
                         <svg
-                          width="17"
-                          height="17"
+                          width="20"
+                          height="20"
                           viewBox="0 0 17 17"
                           fill="none"
                           xmlns="http://www.w3.org/2000/svg"
+                          class="rotated"
                         >
-                          <g transform="scale(-1, -1) translate(-17, -20)">
-                            <path
-                              d="M5.94287 13.0973V5.90059C5.94287 5.61726 6.02787 5.34101 6.1837 5.10726L8.11745 2.23143C8.42204 1.77101 9.17995 1.44518 9.82454 1.68601C10.5187 1.91976 10.9791 2.69893 10.8304 3.39309L10.462 5.70934C10.4337 5.92184 10.4904 6.11309 10.6108 6.26184C10.7312 6.39643 10.9083 6.48143 11.0995 6.48143H14.0108C14.5704 6.48143 15.052 6.70809 15.3354 7.10476C15.6045 7.48726 15.6541 7.98309 15.477 8.48601L13.7345 13.7914C13.515 14.6698 12.5587 15.3852 11.6095 15.3852H8.84704C8.37245 15.3852 7.70662 15.2223 7.40204 14.9177L6.49537 14.2164C6.14829 13.9543 5.94287 13.5364 5.94287 13.0973Z"
-                              fill="#171717"
-                              fill-opacity="0.5"
-                            />
-                            <path
-                              d="M3.6905 4.51953H2.96091C1.863 4.51953 1.41675 4.94453 1.41675 5.99286V13.1187C1.41675 14.167 1.863 14.592 2.96091 14.592H3.6905C4.78841 14.592 5.23466 14.167 5.23466 13.1187V5.99286C5.23466 4.94453 4.78841 4.51953 3.6905 4.51953Z"
-                              fill="#171717"
-                              fill-opacity="0.5"
-                            />
-                          </g>
+                          <path
+                            d="M5.94287 13.0973V5.90059C5.94287 5.61726 6.02787 5.34101 6.1837 5.10726L8.11745 2.23143C8.42204 1.77101 9.17995 1.44518 9.82454 1.68601C10.5187 1.91976 10.9791 2.69893 10.8304 3.39309L10.462 5.70934C10.4337 5.92184 10.4904 6.11309 10.6108 6.26184C10.7312 6.39643 10.9083 6.48143 11.0995 6.48143H14.0108C14.5704 6.48143 15.052 6.70809 15.3354 7.10476C15.6045 7.48726 15.6541 7.98309 15.477 8.48601L13.7345 13.7914C13.515 14.6698 12.5587 15.3852 11.6095 15.3852H8.84704C8.37245 15.3852 7.70662 15.2223 7.40204 14.9177L6.49537 14.2164C6.14829 13.9543 5.94287 13.5364 5.94287 13.0973Z"
+                            fill="#171717"
+                            fill-opacity="0.5"
+                          />
+                          <path
+                            d="M3.6905 4.51953H2.96091C1.863 4.51953 1.41675 4.94453 1.41675 5.99286V13.1187C1.41675 14.167 1.863 14.592 2.96091 14.592H3.6905C4.78841 14.592 5.23466 14.167 5.23466 13.1187V5.99286C5.23466 4.94453 4.78841 4.51953 3.6905 4.51953Z"
+                            fill="#171717"
+                            fill-opacity="0.5"
+                          />
                         </svg>
                       </div>
+                      <span class="deslike-count">{{
+                        avaliacao.num_dislikes
+                      }}</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="p-avaliacao" v-else>
-              <p>Nenhuma avaliação disponível.</p>
-            </div>
+          </div>
+          <div class="p-avaliacao" v-else>
+            <p>Nenhuma avaliação disponível.</p>
           </div>
         </div>
       </div>
@@ -470,9 +491,6 @@
 </template>
 
 <script>
-// O que contem no objeto professor:
-/*{ "nome_professor": "GABRIELA CUNHA POSSA", "cod_professor": "1018416", "foto_professor": "https://sigaa.unb.br/sigaa/img/no_picture.png", "materias": [ { "cod_materia": "FGA0254", "nome_materia": "CIÊNCIAS AEROESPACIAIS" }, { "cod_materia": "IFD0171", "nome_materia": "FISICA 1" } ], "avaliacoes": [ { "usuario": { "foto_url": "https://avatars.githubusercontent.com/u/110688069?v=4", "matricula": 222015060, "nome_usuario": "Ana Luiza" }, "num_likes": 2, "comentario": "sla", "nota_total": 10, "cod_materia": "IFD0171", "nota_acesso": 10, "nome_materia": "FISICA 1", "num_dislikes": 0, "nota_didatica": 10, "cod_comentario": "114", "nota_metodologia": 10, "nota_metodo_ensino": 10 }, { "usuario": { "foto_url": "https://avatars.githubusercontent.com/u/137011464?v=4", "matricula": 222006211, "nome_usuario": "Vitor Valerio" }, "num_likes": 0, "comentario": "", "nota_total": 6, "cod_materia": "IFD0171", "nota_acesso": 6, "nome_materia": "FISICA 1", "num_dislikes": 0, "nota_didatica": 6, "cod_comentario": "116", "nota_metodologia": 6, "nota_metodo_ensino": 6 }, { "usuario": { "foto_url": "https://avatars.githubusercontent.com/u/137011464?v=4", "matricula": 222006211, "nome_usuario": "Vitor Valerio" }, "num_likes": 0, "comentario": "", "nota_total": 6, "cod_materia": "FGA0254", "nota_acesso": 6, "nome_materia": "CIÊNCIAS AEROESPACIAIS", "num_dislikes": 0, "nota_didatica": 6, "cod_comentario": "117", "nota_metodologia": 6, "nota_metodo_ensino": 6 } ], "medias": { "media_nota_total": 7.333333333, "media_nota_acesso": 7.333333333, "media_nota_didatica": 7.333333333, "media_nota_metodologia": 7.333333333, "media_nota_metodo_ensino": 7.333333333 } }*/
-
 import { getProfessoresByID } from "@/repositories/professor/obterProfessor.js";
 import { ref } from "vue";
 import router from "@/routes/index";
@@ -490,6 +508,8 @@ export default {
 
   data() {
     return {
+      copiarContato: "Entre em contato",
+      isLikeDislikeInProgress: false,
       professor: Object,
       materia: "",
       comentariosCurtidos: [],
@@ -511,6 +531,17 @@ export default {
     };
   },
   methods: {
+    handleEntrarEmContato() {
+      navigator.clipboard
+        .writeText(this.professor.email_professor)
+        .catch((err) => {
+          console.error("Erro ao copiar o texto: ", err);
+        });
+      this.copiarContato = "E-mail copiado!";
+      setTimeout(() => {
+        this.copiarContato = "Entre em contato";
+      }, 1500);
+    },
     async fetchProfessor(id, materia) {
       try {
         const data = await getProfessoresByID(id, materia);
@@ -541,19 +572,6 @@ export default {
       return urlProfessor;
     },
 
-    getStarClass(index, nota_total) {
-      const notaPorEstrela = 2;
-      const notaAtual = nota_total / notaPorEstrela;
-
-      if (notaAtual >= index) {
-        return "full-star";
-      } else if (notaAtual > index - 1 && notaAtual < index) {
-        return "partial-star";
-      } else {
-        return "empty-star";
-      }
-    },
-
     getStarClassProfessor(nota_total) {
       const notaPorEstrela = 1;
       const totalEstrelas = 5;
@@ -577,38 +595,58 @@ export default {
     },
 
     async handleDislike(cod_comentario) {
-      const comentariosDescriptografados = await descriptarDados(
-        sessionStorage.getItem("likes_dislikes_professores")
-      );
-      const result = await verificacaoDislike(
-        comentariosDescriptografados,
-        cod_comentario
-      );
-      const comentario = this.professor.avaliacoes.find(
-        (avaliacao) => avaliacao.cod_comentario === cod_comentario
-      );
-      if (comentario) {
-        comentario.num_likes += result.num_likes;
-        comentario.num_dislikes += result.num_dislikes;
+      if (this.isLikeDislikeInProgress) return;
+
+      this.isLikeDislikeInProgress = true;
+
+      try {
+        const comentariosDescriptografados = await descriptarDados(
+          sessionStorage.getItem("likes_dislikes_professores")
+        );
+        const result = await verificacaoDislike(
+          comentariosDescriptografados,
+          cod_comentario
+        );
+        const comentario = this.professor.avaliacoes.find(
+          (avaliacao) => avaliacao.cod_comentario === cod_comentario
+        );
+        if (comentario) {
+          comentario.num_likes += result.num_likes;
+          comentario.num_dislikes += result.num_dislikes;
+        }
+        await this.getComentariosCurtidosPeloUsuario();
+      } catch (error) {
+        console.error("Erro ao processar like:", error);
+      } finally {
+        this.isLikeDislikeInProgress = false;
       }
-      await this.getComentariosCurtidosPeloUsuario();
     },
     async handleLike(cod_comentario) {
-      const comentariosDescriptografados = await descriptarDados(
-        sessionStorage.getItem("likes_dislikes_professores")
-      );
-      const result = await verificacaoCurtida(
-        comentariosDescriptografados,
-        cod_comentario
-      );
-      const comentario = this.professor.avaliacoes.find(
-        (avaliacao) => avaliacao.cod_comentario === cod_comentario
-      );
-      if (comentario) {
-        comentario.num_likes += result.num_likes;
-        comentario.num_dislikes += result.num_dislikes;
+      if (this.isLikeDislikeInProgress) return;
+
+      this.isLikeDislikeInProgress = true;
+
+      try {
+        const comentariosDescriptografados = await descriptarDados(
+          sessionStorage.getItem("likes_dislikes_professores")
+        );
+        const result = await verificacaoCurtida(
+          comentariosDescriptografados,
+          cod_comentario
+        );
+        const comentario = this.professor.avaliacoes.find(
+          (avaliacao) => avaliacao.cod_comentario === cod_comentario
+        );
+        if (comentario) {
+          comentario.num_likes += result.num_likes;
+          comentario.num_dislikes += result.num_dislikes;
+        }
+        await this.getComentariosCurtidosPeloUsuario();
+      } catch (error) {
+        console.error("Erro ao processar like:", error);
+      } finally {
+        this.isLikeDislikeInProgress = false;
       }
-      await this.getComentariosCurtidosPeloUsuario();
     },
 
     async getComentariosCurtidosPeloUsuario() {
@@ -639,13 +677,90 @@ export default {
   },
   async mounted() {
     const cod_professor = this.$route.params.id;
-    this.fetchProfessor(cod_professor);
-    this.getComentariosCurtidosPeloUsuario();
+    await this.fetchProfessor(cod_professor);
+    await this.getComentariosCurtidosPeloUsuario();
   },
 };
 </script>
 
 <style scoped>
+.criterios {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.five-estrelas {
+  margin-top: 20px;
+}
+.reaction-buttons {
+  display: flex;
+  justify-content: flex-start; /* Alterado para flex-start */
+  align-items: center;
+}
+.reaction {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Adicionando um espaço entre os botões */
+}
+.like-button,
+.deslike-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.like-button svg path,
+.deslike-button svg path {
+  fill: none;
+  stroke: #ffffff8f;
+}
+
+.like-count,
+.deslike-count {
+  margin-left: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  color: #ffffffa9;
+  font-weight: lighter;
+}
+.like-button.liked svg path {
+  fill: #ffffff;
+  stroke: none; /* Muda a cor do ícone de "like" para verde quando curtido */
+}
+
+.deslike-button.disliked svg path {
+  fill: #ffffff;
+  stroke: none; /* Muda a cor do ícone de "like" para verde quando curtido */
+}
+.rotated {
+  transform: rotate(180deg);
+}
+#avaliacao-likes p {
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+#avaliacao-comentario p {
+  color: white;
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+  opacity: 0.8;
+}
+.avaliacaodiv {
+  width: 90%;
+}
+.container-avaliacao {
+  max-height: fit-content;
+  display: flex;
+  padding: 25px;
+  width: 100%;
+  flex-direction: column;
+}
 .role-button {
   margin-top: 15px;
   background-color: #102c46;
@@ -672,29 +787,37 @@ export default {
 }
 .section {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   margin-top: 20px;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
 .avaliacao {
-  background-color: rgb(235, 235, 235);
+  background-color: rgba(255, 255, 255, 0.2);
   height: fit-content;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
   padding: 1.5rem;
   border-radius: 8px;
 }
 
-.avaliacao p {
+#avaliacao-nome p {
   margin: 5px 0;
+  font-size: 2.5rem;
+  font-family: "Inter", sans-serif;
+  color: white;
+  opacity: 0.8;
 }
 
 #avaliacao-codigo p {
+  margin: 0;
   padding-top: 3px;
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  opacity: 0.6;
 }
 
 #avaliacao-nome {
@@ -709,11 +832,15 @@ export default {
 
 #foto-de-usuario-container {
   display: flex;
-  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row-reverse;
 }
 
 #card-user-container {
   display: flex;
+  justify-content: center;
   flex-direction: column;
 }
 
@@ -726,24 +853,13 @@ export default {
 }
 
 #foto-de-usuario img {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 5rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 8rem;
 }
 
-#like-container,
-#dislike-container {
-  display: flex;
-  width: 50%;
-}
-
-#like-icon,
-#dislike-icon {
-  padding-left: 5%;
-}
-
-#like-icon.liked path {
-  fill: #013d2c;
+svg {
+  height: fit-content;
 }
 
 #dislike-icon.disliked path {
@@ -752,6 +868,7 @@ export default {
 .notas {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
   align-items: center;
   justify-content: center;
 }
@@ -788,7 +905,6 @@ export default {
   -webkit-mask-image: linear-gradient(to left, transparent 40%, black 60%);
   opacity: 1;
 }
-
 .empty-star {
   filter: invert(50%) opacity(30%);
 }
@@ -809,7 +925,7 @@ export default {
 .infos button {
   color: white;
   font-family: "Inter", sans-serif;
-  font-size: 1.2 rem;
+  font-size: 1.3rem;
   background-color: #102c46;
   color: white;
   border: none;
@@ -825,7 +941,9 @@ export default {
 }
 .infos {
   display: flex;
+  padding: 0 30px;
   flex-direction: column;
+  justify-content: center;
   align-items: start;
 }
 .nome-materia {
@@ -869,6 +987,8 @@ export default {
   gap: 10px;
   border-radius: 15px;
   color: white;
+  width: 100%;
+  max-width: 300px;
   display: flex;
   justify-content: space-between;
   font-family: "Inter", sans-serif;
@@ -1025,8 +1145,8 @@ select option {
   align-items: center;
 }
 .contato {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
   height: 100%;
   width: 20vw;
   gap: 20px;
@@ -1038,8 +1158,7 @@ select option {
   background-color: rgba(236, 236, 236, 0.129);
   border-radius: 20px;
   position: relative;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  padding: 20px 0;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -1074,20 +1193,7 @@ select option {
   fill: rgb(242, 242, 242, 0.758);
 }
 
-@media (max-width: 1760px) {
-  .estrela {
-    width: 2.2rem;
-  }
-}
-@media (max-width: 1550px) {
-  .estrela {
-    width: 2rem;
-  }
-}
 @media (max-width: 1000px) {
-  .estrela {
-    width: 1.7rem;
-  }
   .nota-criterio {
     font-size: 2.3rem;
   }
@@ -1096,13 +1202,13 @@ select option {
   }
 }
 @media only screen and (max-width: 700px) {
-  .select-box{
+  .select-box {
     width: 40vw;
   }
-  .materia-wrapper{
+  .materia-wrapper {
     height: auto;
   }
-  .info-materia{
+  .info-materia {
     height: fit-content;
     max-height: max-content;
   }
@@ -1129,10 +1235,6 @@ select option {
   .notas {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-  }
-  .estrela {
-    height: 5rem;
-    width: 1.7rem;
   }
 }
 @media (max-width: 500px) {
