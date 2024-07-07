@@ -1,9 +1,0 @@
-  
-  Regras para pasta Components
-    
-  - Divida em pastas por categorias quando foram components utilizados em mais de uma página.
-  - Divida em pastas por página quando forem components únicos de uma página específica.
-  - Nome dos components: NomeSignificativoComponent.vue
-  - Nome que será exportado: O MESMO NOME QUE VOCÊ DEU PARA O COMPONENTE
-  - Componentes são unidades atômicas, não chame uma página de componente.
-

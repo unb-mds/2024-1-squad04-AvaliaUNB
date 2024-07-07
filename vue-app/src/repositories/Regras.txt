@@ -1,6 +1,0 @@
-    Regras repositories
-
-    - Aqui interagimos com a API pegando os dados cruamente
-    - Dados macro, apenas requisições GET, POST, PUT e DELETE
-    - Nada de tratar dados aqui, tratamento de dados para caberem em nossas regras de negócios é feito no service
-    - Separe os métodos por categoria (pasta): Usuario, Materia, Professor
