@@ -315,9 +315,5 @@ export default {
   .custom-image {
     display: none;
   }
-  .container {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 </style>
