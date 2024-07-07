@@ -2,7 +2,8 @@ export async function deletarRelacionamentoUsuarioComentarioProfessor(
 	cod_comentario,
 	matricula
 ) {
-	const url = `http://localhost:3000/usuario_comentario_professor`;
+	const apiUrl = process.env.VUE_APP_API_URL;
+	const url = `${apiUrl}/usuario_comentario_professor`;
 
 	const response = await fetch(url, {
 		method: "DELETE",

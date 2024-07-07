@@ -1,5 +1,7 @@
-import { getMinhasAvaliacoesDeProfessor } from "@/repositories/usuario/obterAvaliacoesUsuario";
-import { getMinhasAvaliacoesDeMaterias } from "@/repositories/usuario/obterAvaliacoesUsuario";
+import {
+	getMinhasAvaliacoesDeProfessor,
+	getMinhasAvaliacoesDeMaterias,
+} from "@/repositories/usuario/obterAvaliacoesUsuario";
 import { descriptarDados } from "@/generals/descriptografarDados";
 
 export async function obterMinhasAvaliacoesProfessores() {

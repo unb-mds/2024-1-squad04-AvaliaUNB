@@ -13,9 +13,10 @@ import axios from "axios";
 import { descriptarDados } from "@/generals/descriptografarDados";
 
 const beforeEnterCheck = async () => {
+	const apiUrl = process.env.VUE_APP_API_URL;
 	if (sessionStorage.getItem("matricula") != null) {
 		try {
-			const responseuser = await axios.get("http://localhost:3000/usuario");
+			const responseuser = await axios.get(`${apiUrl}/usuario`);
 			const user = responseuser.data;
 			const usuarioSessionStorage = sessionStorage.getItem("matricula");
 
@@ -23,8 +24,8 @@ const beforeEnterCheck = async () => {
 				usuarioSessionStorage
 			);
 
-			for (let i = 0; i < user.length; i++) {
-				if (user[i].matricula === parseInt(matriculaDescriptografada)) {
+			for (const element of user) {
+				if (element.matricula === parseInt(matriculaDescriptografada)) {
 					return;
 				}
 			}

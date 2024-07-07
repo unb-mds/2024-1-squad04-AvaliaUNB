@@ -2,8 +2,9 @@ import CryptoJS from "crypto-js";
 import axios from "axios";
 
 export async function descriptarDados(dadoCriptografado) {
+	const apiUrl = process.env.VUE_APP_API_URL;
 	try {
-		const response = await axios.get("http://localhost:3000/chave");
+		const response = await axios.get(`${apiUrl}/chave`);
 		const chave = response.data;
 		const bytes = CryptoJS.AES.decrypt(dadoCriptografado, chave);
 		const jsonDados = bytes.toString(CryptoJS.enc.Utf8);

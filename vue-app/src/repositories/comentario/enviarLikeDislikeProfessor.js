@@ -8,8 +8,9 @@ export async function curtirDescurtirComentarioProfessor(
 		novo_dislike,
 		id,
 	};
+	const apiUrl = process.env.VUE_APP_API_URL;
 	try {
-		const response = await fetch("http://localhost:3000/comentario_professor", {
+		const response = await fetch(`${apiUrl}/comentario_professor`, {
 			method: "PUT",
 			headers: {
 				"Content-Type": "application/json",
@@ -37,17 +38,15 @@ export async function relacionamentoUsuarioCurtidaProfessor(
 		like,
 		dislike,
 	};
+	const apiUrl = process.env.VUE_APP_API_URL;
 	try {
-		const response = await fetch(
-			"http://localhost:3000/usuario_comentario_professor",
-			{
-				method: "POST",
-				headers: {
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify(curtidaOuDescurtida),
-			}
-		);
+		const response = await fetch(`${apiUrl}/usuario_comentario_professor`, {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(curtidaOuDescurtida),
+		});
 		if (!response.ok) {
 			throw new Error("Erro ao curtir/descurtir");
 		}
