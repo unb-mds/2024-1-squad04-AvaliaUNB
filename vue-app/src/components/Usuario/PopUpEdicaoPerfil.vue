@@ -65,6 +65,7 @@
 import { editarDadosPerfil } from "@/service/usuario/editarDadosPerfil";
 import { getUsuarios } from "@/repositories/usuario/obterUsuarios.js";
 import { verificarEmail, verificarUrl } from "@/generals/verificarInputs.js";
+import verificarPalvrao from "@/generals/verificarPalavrao";
 export default {
   name: "PopUpEdicaoPerfil",
   props: {
@@ -91,6 +92,10 @@ export default {
       if (this.verificarInputs()) {
         if (!(await this.verificaExistencia(this.form.email))) {
           try {
+            this.form.nome = verificarPalvrao(this.form.nome);
+            this.form.sobrenome = verificarPalvrao(this.form.sobrenome);
+            this.form.email = verificarPalvrao(this.form.email);
+            this.form.foto_url = verificarPalvrao(this.form.foto_url);
             const usuarioAtualizado = {
               matricula: this.usuarioInfo.matricula,
               nome: this.form.nome,

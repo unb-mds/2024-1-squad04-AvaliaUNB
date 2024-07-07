@@ -86,12 +86,12 @@ export default {
       router.go(-1);
     },
     handleLogOut() {
-      sessionStorage.setItem("matricula", "");
-      sessionStorage.setItem("foto_perfil", "");
-      sessionStorage.setItem("professores_avaliados", "");
-      sessionStorage.setItem("materias_avaliadas", "");
-      sessionStorage.setItem("likes_dislikes_materias", "");
-      sessionStorage.setItem("likes_dislikes_professores", "");
+      sessionStorage.removeItem("matricula");
+      sessionStorage.removeItem("foto_perfil");
+      sessionStorage.removeItem("professores_avaliados");
+      sessionStorage.removeItem("materias_avaliadas");
+      sessionStorage.removeItem("likes_dislikes_materias");
+      sessionStorage.removeItem("likes_dislikes_professores");
       window.location.reload();
     },
     togglePopUpEdit() {

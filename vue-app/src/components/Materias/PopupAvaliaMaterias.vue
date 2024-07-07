@@ -54,6 +54,7 @@ import { getUsuarios } from "@/repositories/usuario/obterUsuarios";
 import { descriptarDados } from "@/generals/descriptografarDados";
 import { encriptarDados } from "@/generals/encripitarDados";
 import LoadingComponent from "../Navegacao/LoadingComponent.vue";
+import verificarPalvrao from "@/generals/verificarPalavrao";
 //matricula-int, cod_prof-char, materia-char, resto-int
 
 export default {
@@ -101,6 +102,7 @@ export default {
               "materias_avaliadas",
               await encriptarDados(materiasAvaliadas)
             );
+            this.comentario = verificarPalvrao(this.comentario);
             await enviarAvaliacaoMateria(
               nota_dif,
               nota_exp,
