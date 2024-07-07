@@ -1,1 +1,0 @@
-Esses dados foram retirados da listagem de professores do Sigaa e serão usados para o preenchimento do banco de dados
