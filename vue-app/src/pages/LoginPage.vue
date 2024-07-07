@@ -8,10 +8,10 @@
           class="custom-image"
         />
       </div>
-      <div class="col-lg-6 px-4 py-5 bg-blue">
+      <div class="col-lg-6 px-4 py-5 bg-blue login">
         <h1 class="title">Entrar</h1>
         <div class="card">
-          <form class="form">
+          <form class="form" @submit.prevent="HandleLogin">
             <div class="inputs">
               <label class="email"></label>
               <input
@@ -30,23 +30,17 @@
               <p class="cadastrar-p" @click.prevent="HandleCadastro">
                 Não possui conta? Cadastre-se aqui.
               </p>
+              <button class="login-button" :disabled="loading">
+                <LoadingComponent
+                  class="loading"
+                  v-if="loading"
+                  :isLoading="loading"
+                />
+                <span v-else>Entrar</span>
+              </button>
+              <p class="login-error" v-if="erro">{{ erro }}</p>
             </div>
           </form>
-          <div class="buttons-login">
-            <button
-              class="login-button"
-              @click.prevent="HandleLogin"
-              :disabled="loading"
-            >
-              <LoadingComponent
-                class="loading"
-                v-if="loading"
-                :isLoading="loading"
-              />
-              <span v-else>Entrar</span>
-            </button>
-          </div>
-          <p class="login-error">{{ erro }}</p>
         </div>
       </div>
     </div>
@@ -111,7 +105,7 @@ export default {
         }
         setTimeout(() => {
           this.erro = "";
-        }, 5000);
+        }, 2000);
       } catch (error) {
         this.loading = false;
         console.error("Erro ao executar o login:", error);
@@ -130,7 +124,12 @@ export default {
 .bg-white {
   flex: 1; /* Ocupa todo o espaço restante */
 }
-
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .bg-blue {
   position: absolute;
   top: 0;
@@ -156,45 +155,23 @@ export default {
 }
 
 .card {
-  position: relative;
-  top: 50%; /* Define o topo como 50% da altura da div pai */
-  left: 50%; /* Define a margem esquerda como 50% da largura da div pai */
-  transform: translate(
-    -50%,
-    -50%
-  ); /* Move o elemento de volta metade de sua largura e metade de sua altura */
-  width: 55%; /* Largura do elemento */
-  height: 25%;
+  width: fit-content;
+  height: fit-content;
   background: linear-gradient(
     rgba(255, 255, 255, 0.3),
     rgba(255, 255, 255, 0.1)
   );
   border-radius: 30px;
   padding: 6%;
-  margin-bottom: 50px;
 }
 
-/* Estilos adicionais para o título "Entrar" */
 .title {
-  position: absolute; /* Define o título como posição absoluta */
-  top: calc(50% - 37%); /* Ajusta a posição vertical do topo do título */
-  left: calc(
-    50% - 36%
-  ); /* Ajusta a posição horizontal para alinhar com o card */
   font-family: "Open Sans", sans-serif;
-  font-size: 400%;
-  color: #fff; /* Cor branca */
-  padding: 20px; /* Padding para todos os lados */
-
-  position: absolute; /* Define o título como posição absoluta */
-  top: calc(50% - 37%); /* Ajusta a posição vertical do topo do título */
-  left: calc(
-    50% - 36%
-  ); /* Ajusta a posição horizontal para alinhar com o card */
-  font-family: "Open Sans", sans-serif;
-  font-size: 400%;
-  color: #fff; /* Cor branca */
-  padding: 20px; /* Padding para todos os lados */
+  font-size: 4rem;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+  width: 66%;
 }
 
 /* Estilos adicionais para os outros textos */
@@ -252,6 +229,8 @@ export default {
 .login-error {
   color: red;
   font-size: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
   margin-top: 10px;
 }
 .custom-image {
@@ -269,7 +248,12 @@ export default {
 
 .inputs {
   display: grid;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
+}
+.inputs input {
+  width: 25vw;
 }
 
 .buttons-login {
@@ -311,11 +295,6 @@ export default {
   outline: none;
 }
 
-.login-error {
-  color: red;
-  font-size: 14px;
-  margin-top: 10px;
-}
 .custom-image {
   position: absolute;
   top: 50%;
@@ -327,16 +306,18 @@ export default {
 
 /* para telas menores do que 1203px*/
 @media screen and (max-width: 1200px) {
+  .inputs input {
+    width: 40vw;
+  }
+  .login {
+    width: 100%;
+  }
+  .custom-image {
+    display: none;
+  }
   .container {
     flex-direction: column;
     align-items: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .title {
-    margin-left: 3%;
-    margin-top: 15%;
   }
 }
 </style>
