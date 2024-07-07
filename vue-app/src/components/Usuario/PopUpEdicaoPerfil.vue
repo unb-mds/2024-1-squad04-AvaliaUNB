@@ -92,10 +92,15 @@ export default {
       if (this.verificarInputs()) {
         if (!(await this.verificaExistencia(this.form.email))) {
           try {
-            this.form.nome = verificarPalvrao(this.form.nome);
-            this.form.sobrenome = verificarPalvrao(this.form.sobrenome);
-            this.form.email = verificarPalvrao(this.form.email);
-            this.form.foto_url = verificarPalvrao(this.form.foto_url);
+            if (
+              verificarPalvrao(this.form.foto_url) ||
+              verificarPalvrao(this.form.email) ||
+              verificarPalvrao(this.form.sobrenome) ||
+              verificarPalvrao(this.form.nome)
+            ) {
+              this.error_message = "Não insira palavrões em nenhum dos campos!";
+              return;
+            }
             const usuarioAtualizado = {
               matricula: this.usuarioInfo.matricula,
               nome: this.form.nome,

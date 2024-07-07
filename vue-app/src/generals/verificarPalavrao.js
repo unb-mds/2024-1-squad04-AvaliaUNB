@@ -31,7 +31,5 @@ const piii = new Piii({
 });
 
 export default function verificarPalvrao(frase) {
-  if (frase) {
-    return (frase = piii.filter(frase));
-  }
+  return piii.has(frase);
 }

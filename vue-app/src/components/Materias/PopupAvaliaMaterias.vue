@@ -81,6 +81,11 @@ export default {
         const matriculaLogada = parseInt(matriculaLogadaStr, 10);
         const usuarios = await getUsuarios();
         this.erro = "";
+        if (verificarPalvrao(this.comentario)) {
+          this.erro = "Não insira palavrões em nenhum dos campos!";
+          this.loading = false;
+          return;
+        }
         for (let i = 0; i < usuarios.length; i++) {
           if (matriculaLogada === usuarios[i].matricula) {
             let materiasAvaliadas = await descriptarDados(
@@ -102,7 +107,6 @@ export default {
               "materias_avaliadas",
               await encriptarDados(materiasAvaliadas)
             );
-            this.comentario = verificarPalvrao(this.comentario);
             await enviarAvaliacaoMateria(
               nota_dif,
               nota_exp,

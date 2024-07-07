@@ -121,6 +121,11 @@ export default {
       try {
         this.loading = true;
         this.erro = "";
+        if (verificarPalvrao(this.comentario_materia.comentario)) {
+          this.erro = "Não insira palavrões em nenhum dos campos!";
+          this.loading = false;
+          return;
+        }
         if (
           isNaN(nota_acesso) ||
           isNaN(nota_didatica) ||
@@ -162,9 +167,6 @@ export default {
         const usuarios = await getUsuarios();
         for (let i = 0; i < usuarios.length; i++) {
           if (matriculaLogada === usuarios[i].matricula) {
-            this.comentario_materia.comentario = verificarPalvrao(
-              this.comentario_materia.comentario
-            );
             await enviarAvaliacaoProfessor(
               matriculaLogada,
               this.professor.cod_professor,
