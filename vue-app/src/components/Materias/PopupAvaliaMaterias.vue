@@ -58,85 +58,85 @@ import verificarPalvrao from "@/generals/verificarPalavrao";
 //matricula-int, cod_prof-char, materia-char, resto-int
 
 export default {
-	name: "PopUp",
-	components: {
-		ratingStars,
-		LoadingComponent,
-	},
-	props: {
-		TogglePopup: Function,
-		materia: Object,
-	},
-	methods: {
-		async SubmitAvaliacaoMaterias() {
-			this.loading = true;
-			if (isNaN(nota_exp) || isNaN(nota_dif)) {
-				this.loading = false;
-				this.erro = "Preencha todas as avaliações antes de enviar!";
-				return;
-			}
-			try {
-				// carisma no banco vai ser metodo de ensino pq vai dar mt t  rabalho pra mudar o nome
-				const matriculaLogadaStr = await getUsuarioLogado();
-				const matriculaLogada = parseInt(matriculaLogadaStr, 10);
-				const usuarios = await getUsuarios();
-				this.erro = "";
-				if (verificarPalvrao(this.comentario)) {
-					this.erro = "Não insira palavrões em nenhum dos campos!";
-					this.loading = false;
-					return;
-				}
-				for (let i = 0; i < usuarios.length; i++) {
-					if (matriculaLogada === usuarios[i].matricula) {
-						let materiasAvaliadas = await descriptarDados(
-							sessionStorage.getItem("materias_avaliadas")
-						);
-						for (let i = 0; i < materiasAvaliadas.length; i++) {
-							if (
-								materiasAvaliadas[i].cod_materia === this.materia.cod_materia
-							) {
-								this.loading = false;
-								return (this.erro = "Você ja avaliou essa materia");
-							}
-						}
-						materiasAvaliadas = [
-							...materiasAvaliadas,
-							{ cod_materia: this.materia.cod_materia },
-						];
-						sessionStorage.setItem(
-							"materias_avaliadas",
-							await encriptarDados(materiasAvaliadas)
-						);
-						await enviarAvaliacaoMateria(
-							nota_dif,
-							nota_exp,
-							this.comentario,
-							matriculaLogada,
-							this.materia.cod_materia
-						);
-						this.loading = false;
-						this.TogglePopup();
-						location.reload();
-						return;
-					}
-				}
-				this.erro = "Você precisa logar para avaliar!";
-			} catch (error) {
-				this.erro = "Erro ao enviar avaliação, tente novamente!";
-			}
-		},
-		handle(avaliacao) {
-			nota_exp = parseInt(avaliacao.notaExperiencia);
-			nota_dif = parseInt(avaliacao.notaDificuldade);
-		},
-	},
-	data() {
-		return {
-			comentario: "",
-			erro: "",
-			loading: false,
-		};
-	},
+  name: "PopUp",
+  components: {
+    ratingStars,
+    LoadingComponent,
+  },
+  props: {
+    TogglePopup: Function,
+    materia: Object,
+  },
+  methods: {
+    async SubmitAvaliacaoMaterias() {
+      this.loading = true;
+      if (isNaN(nota_exp) || isNaN(nota_dif)) {
+        this.loading = false;
+        this.erro = "Preencha todas as avaliações antes de enviar!";
+        return;
+      }
+      try {
+        // carisma no banco vai ser metodo de ensino pq vai dar mt t  rabalho pra mudar o nome
+        const matriculaLogadaStr = await getUsuarioLogado();
+        const matriculaLogada = parseInt(matriculaLogadaStr, 10);
+        const usuarios = await getUsuarios();
+        this.erro = "";
+        if (verificarPalvrao(this.comentario)) {
+          this.erro = "Não insira palavrões em nenhum dos campos!";
+          this.loading = false;
+          return;
+        }
+        for (let i = 0; i < usuarios.length; i++) {
+          if (matriculaLogada === usuarios[i].matricula) {
+            let materiasAvaliadas = await descriptarDados(
+              sessionStorage.getItem("materias_avaliadas")
+            );
+            for (let i = 0; i < materiasAvaliadas.length; i++) {
+              if (
+                materiasAvaliadas[i].cod_materia === this.materia.cod_materia
+              ) {
+                this.loading = false;
+                return (this.erro = "Você ja avaliou essa materia");
+              }
+            }
+            materiasAvaliadas = [
+              ...materiasAvaliadas,
+              { cod_materia: this.materia.cod_materia },
+            ];
+            sessionStorage.setItem(
+              "materias_avaliadas",
+              await encriptarDados(materiasAvaliadas)
+            );
+            await enviarAvaliacaoMateria(
+              nota_dif,
+              nota_exp,
+              this.comentario,
+              matriculaLogada,
+              this.materia.cod_materia
+            );
+            this.loading = false;
+            this.TogglePopup();
+            location.reload();
+            return;
+          }
+        }
+        this.erro = "Você precisa logar para avaliar!";
+      } catch (error) {
+        this.erro = "Erro ao enviar avaliação, tente novamente!";
+      }
+    },
+    handle(avaliacao) {
+      nota_exp = parseInt(avaliacao.notaExperiencia);
+      nota_dif = parseInt(avaliacao.notaDificuldade);
+    },
+  },
+  data() {
+    return {
+      comentario: "",
+      erro: "",
+      loading: false,
+    };
+  },
 };
 </script>
 

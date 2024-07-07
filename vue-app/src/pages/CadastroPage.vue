@@ -244,9 +244,15 @@ export default {
           this.loading = false;
           return;
         }
-        this.formData.nome = verificarPalvrao(this.formData.nome);
-        this.formData.sobrenome = verificarPalvrao(this.formData.sobrenome);
-        this.formData.email = verificarPalvrao(this.formData.email);
+        if (
+          verificarPalvrao(this.formData.email) ||
+          verificarPalvrao(this.formData.sobrenome) ||
+          verificarPalvrao(this.formData.nome)
+        ) {
+          this.mensagemErro = "Não insira palavrões em nenhum dos campos!";
+          this.loading = false;
+          return;
+        }
         cadastrarUsuarioDB(this.formData);
         this.formData.nome = "";
         this.formData.sobrenome = "";

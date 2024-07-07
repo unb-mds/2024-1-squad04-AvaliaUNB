@@ -117,80 +117,81 @@ export default {
 			nota_carisma = parseInt(avaliacao.notaCarisma);
 		},
 
-		async SubmitAvaliacao() {
-			try {
-				this.loading = true;
-				this.erro = "";
-				if (verificarPalvrao(this.comentario_materia.comentario)) {
-					this.erro = "Não insira palavrões em nenhum dos campos!";
-					this.loading = false;
-					return;
-				}
-				if (
-					isNaN(nota_acesso) ||
-					isNaN(nota_didatica) ||
-					isNaN(nota_metodologia) ||
-					isNaN(nota_carisma)
-				) {
-					this.loading = false;
-					this.erro = "Preencha todas as avaliações antes de enviar!";
-					return;
-				}
-				let professoresAvaliados = await descriptarDados(
-					sessionStorage.getItem("professores_avaliados")
-				);
-				for (let i = 0; i < professoresAvaliados.length; i++) {
-					if (
-						professoresAvaliados[i].cod_professor ===
-							this.professor.cod_professor &&
-						professoresAvaliados[i].cod_materia ===
-							this.comentario_materia.materia
-					) {
-						this.loading = false;
-						return (this.erro = "Você ja avaliou esse professor nessa materia");
-					}
-				}
-				professoresAvaliados = [
-					...professoresAvaliados,
-					{
-						cod_materia: this.comentario_materia.materia,
-						cod_professor: this.professor.cod_professor,
-					},
-				];
-				sessionStorage.setItem(
-					"professores_avaliados",
-					await encriptarDados(professoresAvaliados)
-				);
-				// carisma no banco vai ser metodo de ensino pq vai dar mt trabalho pra mudar o nome
-				const matriculaLogadaStr = await getUsuarioLogado();
-				const matriculaLogada = parseInt(matriculaLogadaStr, 10);
-				const usuarios = await getUsuarios();
-				for (let i = 0; i < usuarios.length; i++) {
-					if (matriculaLogada === usuarios[i].matricula) {
-						await enviarAvaliacaoProfessor(
-							matriculaLogada,
-							this.professor.cod_professor,
-							this.comentario_materia.materia,
-							nota_acesso,
-							nota_didatica,
-							nota_metodologia,
-							nota_carisma,
-							this.comentario_materia.comentario
-						);
-						this.loading = false;
-						this.TogglePopup();
-						location.reload();
-						return;
-					}
-				}
-				this.loading = false;
-				this.erro = "Você precisa logar para avaliar!";
-			} catch (error) {
-				this.loading = false;
-				this.erro = "Erro ao enviar avaliação, tente novamente!";
-			}
-		},
-	},
+
+    async SubmitAvaliacao() {
+      try {
+        this.loading = true;
+        this.erro = "";
+        if (verificarPalvrao(this.comentario_materia.comentario)) {
+          this.erro = "Não insira palavrões em nenhum dos campos!";
+          this.loading = false;
+          return;
+        }
+        if (
+          isNaN(nota_acesso) ||
+          isNaN(nota_didatica) ||
+          isNaN(nota_metodologia) ||
+          isNaN(nota_carisma)
+        ) {
+          this.loading = false;
+          this.erro = "Preencha todas as avaliações antes de enviar!";
+          return;
+        }
+        let professoresAvaliados = await descriptarDados(
+          sessionStorage.getItem("professores_avaliados")
+        );
+        for (let i = 0; i < professoresAvaliados.length; i++) {
+          if (
+            professoresAvaliados[i].cod_professor ===
+              this.professor.cod_professor &&
+            professoresAvaliados[i].cod_materia ===
+              this.comentario_materia.materia
+          ) {
+            this.loading = false;
+            return (this.erro = "Você ja avaliou esse professor nessa materia");
+          }
+        }
+        professoresAvaliados = [
+          ...professoresAvaliados,
+          {
+            cod_materia: this.comentario_materia.materia,
+            cod_professor: this.professor.cod_professor,
+          },
+        ];
+        sessionStorage.setItem(
+          "professores_avaliados",
+          await encriptarDados(professoresAvaliados)
+        );
+        // carisma no banco vai ser metodo de ensino pq vai dar mt trabalho pra mudar o nome
+        const matriculaLogadaStr = await getUsuarioLogado();
+        const matriculaLogada = parseInt(matriculaLogadaStr, 10);
+        const usuarios = await getUsuarios();
+        for (let i = 0; i < usuarios.length; i++) {
+          if (matriculaLogada === usuarios[i].matricula) {
+            await enviarAvaliacaoProfessor(
+              matriculaLogada,
+              this.professor.cod_professor,
+              this.comentario_materia.materia,
+              nota_acesso,
+              nota_didatica,
+              nota_metodologia,
+              nota_carisma,
+              this.comentario_materia.comentario
+            );
+            this.loading = false;
+            this.TogglePopup();
+            location.reload();
+            return;
+          }
+        }
+        this.loading = false;
+        this.erro = "Você precisa logar para avaliar!";
+      } catch (error) {
+        this.loading = false;
+        this.erro = "Erro ao enviar avaliação, tente novamente!";
+      }
+    },
+  },
 };
 </script>
 
