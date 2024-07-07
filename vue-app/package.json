@@ -11,6 +11,8 @@
 		"axios": "^1.7.2",
 		"core-js": "^3.8.3",
 		"crypto-js": "^4.2.0",
+		"piii": "^4.0.2",
+		"piii-filters": "^1.0.0",
 		"scrollreveal": "^4.0.9",
 		"vue": "^3.4.29",
 		"vue-router": "^4.3.2",
