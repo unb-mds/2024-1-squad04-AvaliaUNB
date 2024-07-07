@@ -10,10 +10,11 @@ export async function editarRelacionamentoUsuarioComentarioProfessor(
 		like: like,
 		dislike: dislike,
 	};
+	const apiUrl = process.env.VUE_APP_API_URL;
 
 	try {
 		const response = await fetch(
-			`http://localhost:3000/usuario_comentario_professor/${cod_comentario}/${matricula}`,
+			`${apiUrl}/usuario_comentario_professor/${cod_comentario}/${matricula}`,
 			{
 				method: "PUT",
 				headers: {
@@ -46,10 +47,10 @@ export async function editarRelacionamentoUsuarioComentarioMateria(
 		like: like,
 		dislike: dislike,
 	};
-
+	const apiUrl = process.env.VUE_APP_API_URL;
 	try {
 		const response = await fetch(
-			`http://localhost:3000/usuario_comentario_materia/${cod_comentario}/${matricula}`,
+			`${apiUrl}/usuario_comentario_materia/${cod_comentario}/${matricula}`,
 			{
 				method: "PUT",
 				headers: {

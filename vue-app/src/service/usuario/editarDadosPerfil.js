@@ -1,5 +1,6 @@
 export async function editarDadosPerfil(dados_formulario) {
-	const url = "http://localhost:3000/usuario_perfil";
+	const apiUrl = process.env.VUE_APP_API_URL;
+	const url = `${apiUrl}/usuario_perfil`;
 	const options = {
 		method: "PUT",
 		headers: {
