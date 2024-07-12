@@ -192,6 +192,7 @@ export default {
 	align-items: center;
 	justify-content: flex-end;
 	gap: 16px;
+	cursor: pointer;
 }
 
 .profile {
