@@ -1,0 +1,3 @@
+Essa pasta é destinada a testes ponta a ponta utilizando o Cypress 
+Os testes devem ser separados por funcionalidades, por exemplo: Cadastro, Login, Visualizar Professores, Visualizar Matérias, Avaliar Professores, Avaliar Materias, Editar meus dados, Excluir avaliação de professores ou de matérias e etc
+Os arquivos de testes devem seguir a nomeclatura NomeDaFuncionalidade.spec.js
