@@ -209,9 +209,10 @@ export default {
     },
 
     async getComentariosCurtidosPeloUsuario() {
-      return (this.comentariosCurtidos = await descriptarDados(
+      this.comentariosCurtidos = await descriptarDados(
         sessionStorage.getItem("likes_dislikes_materias")
-      ));
+      );
+      return this.comentariosCurtidos;
     },
     isLiked(cod_comentario) {
       let comentario = this.comentariosCurtidos.find(

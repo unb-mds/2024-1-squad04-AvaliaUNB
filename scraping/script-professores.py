@@ -1,5 +1,3 @@
-from bs4 import BeautifulSoup
-import requests
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
@@ -9,7 +7,7 @@ import time
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import NoSuchElementException 
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.support import expected_conditions as EC
 import json
 
@@ -131,8 +129,6 @@ try:
 
         adicionar_professor(nome_professor, codigo_professor, arquivo_json)
 
-        # codigo_siape = professor.find_element(By.TAG_NAME, 'a').get_attribute('href').split('=')[-1]
-        # print(codigo_siape)
 
         pagina_disciplinas = driver.find_elements(By.CLASS_NAME, 'disciplinas_ministradas')[0].click()
         disciplinas_graduacao = driver.find_element(By.ID, 'ext-comp-1001__ext-comp-1007').click()
@@ -157,10 +153,6 @@ try:
                 
             except NoSuchElementException:
                 pass
-
-            # if (linhas.get_attribute('class') == 'anoPeriodo'):
-            #     semestre = linhas.find_element(By.TAG_NAME, 'td').text
-            #     json_infos[1] = semestre
             
             try: 
                 codigo = linhas.find_element(By.CLASS_NAME, 'codigo').text
@@ -185,13 +177,13 @@ try:
                 
                 # print(f"{nome_professor} {semestre} {codigo} {disciplina} {carga_horaria}")
                 if (semestre == "" or codigo == "" or disciplina == "" or disciplina == ""):
-                    pass
+                    continue
                 else:
                     adicionar_disciplina(nome_professor, disciplina, codigo, carga_horaria, semestre, arquivo_json)
                     json_infos = [nome_professor, semestre]
             
 
-except:
+except (NoSuchElementException, TimeoutException):
     driver.quit()
 
 finally:
