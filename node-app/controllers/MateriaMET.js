@@ -1,8 +1,6 @@
-import Sequelize from "sequelize";
-
 export const getMateriasAvaliadss = (app, sequelize) => {
-	app.get("/materias_avaliadas", (req, res) => {
-		const sqlQuery = `
+  app.get("/materias_avaliadas", (req, res) => {
+    const sqlQuery = `
         SELECT 
             m.nome AS nome_materia,
             m.cod_materia AS cod_materia,
@@ -19,26 +17,26 @@ export const getMateriasAvaliadss = (app, sequelize) => {
             nota_media_total DESC;
     `;
 
-		sequelize
-			.query(sqlQuery, { type: sequelize.QueryTypes.SELECT })
-			.then((result) => {
-				console.log("Consulta realizada com sucesso");
-				res.json({ success: true, data: result });
-			})
-			.catch((error) => {
-				console.error("Erro ao consultar materias avaliadas:", error);
-				res.status(500).json({
-					success: false,
-					message: "Erro ao consultar materias avaliadas",
-				});
-			});
-	});
+    sequelize
+      .query(sqlQuery, { type: sequelize.QueryTypes.SELECT })
+      .then((result) => {
+        console.log("Consulta realizada com sucesso");
+        res.json({ success: true, data: result });
+      })
+      .catch((error) => {
+        console.error("Erro ao consultar materias avaliadas:", error);
+        res.status(500).json({
+          success: false,
+          message: "Erro ao consultar materias avaliadas",
+        });
+      });
+  });
 };
 
 export const getMaterias = (app, sequelize) => {
-	app.get("/materias", async (req, res) => {
-		try {
-			const sqlQuery = `
+  app.get("/materias", async (req, res) => {
+    try {
+      const sqlQuery = `
           SELECT 
             m.nome AS nome_materia,
             m.cod_materia AS cod_materia,
@@ -63,25 +61,25 @@ export const getMaterias = (app, sequelize) => {
             nota_media_total DESC;
         `;
 
-			const materias = await sequelize.query(sqlQuery, {
-				type: sequelize.QueryTypes.SELECT,
-			});
+      const materias = await sequelize.query(sqlQuery, {
+        type: sequelize.QueryTypes.SELECT,
+      });
 
-			res.json({ success: true, data: materias });
-		} catch (error) {
-			console.error("Erro ao consultar materias avaliadas:", error);
-			res.status(500).json({
-				success: false,
-				message: "Erro ao consultar materias avaliadas",
-			});
-		}
-	});
+      res.json({ success: true, data: materias });
+    } catch (error) {
+      console.error("Erro ao consultar materias avaliadas:", error);
+      res.status(500).json({
+        success: false,
+        message: "Erro ao consultar materias avaliadas",
+      });
+    }
+  });
 };
 
 export const getMateriasParaFiltragem = (app, sequelize) => {
-	app.get("/materias_para_filtragem", async (req, res) => {
-		try {
-			const sqlQuery = `
+  app.get("/materias_para_filtragem", async (req, res) => {
+    try {
+      const sqlQuery = `
           SELECT 
             nome,
             cod_materia
@@ -89,26 +87,26 @@ export const getMateriasParaFiltragem = (app, sequelize) => {
             materia m
         `;
 
-			const materias = await sequelize.query(sqlQuery, {
-				type: sequelize.QueryTypes.SELECT,
-			});
+      const materias = await sequelize.query(sqlQuery, {
+        type: sequelize.QueryTypes.SELECT,
+      });
 
-			res.json({ success: true, data: materias });
-		} catch (error) {
-			console.error("Erro ao consultar materias :", error);
-			res
-				.status(500)
-				.json({ success: false, message: "Erro ao consultar materias" });
-		}
-	});
+      res.json({ success: true, data: materias });
+    } catch (error) {
+      console.error("Erro ao consultar materias :", error);
+      res
+        .status(500)
+        .json({ success: false, message: "Erro ao consultar materias" });
+    }
+  });
 };
 
 export const getMateriaById = (app, sequelize) => {
-	app.get("/materia/:cod_materia", async (req, res) => {
-		const { cod_materia } = req.params;
+  app.get("/materia/:cod_materia", async (req, res) => {
+    const { cod_materia } = req.params;
 
-		try {
-			const sqlQuery = `
+    try {
+      const sqlQuery = `
           SELECT 
             m.nome AS nome_materia,
             m.cod_materia AS cod_materia,
@@ -153,17 +151,17 @@ export const getMateriaById = (app, sequelize) => {
             m.cod_materia;
         `;
 
-			const materia = await sequelize.query(sqlQuery, {
-				type: sequelize.QueryTypes.SELECT,
-				replacements: { cod_materia },
-			});
+      const materia = await sequelize.query(sqlQuery, {
+        type: sequelize.QueryTypes.SELECT,
+        replacements: { cod_materia },
+      });
 
-			res.json({ success: true, data: materia });
-		} catch (error) {
-			console.error("Erro ao consultar matéria:", error);
-			res
-				.status(500)
-				.json({ success: false, message: "Erro ao consultar matéria" });
-		}
-	});
+      res.json({ success: true, data: materia });
+    } catch (error) {
+      console.error("Erro ao consultar matéria:", error);
+      res
+        .status(500)
+        .json({ success: false, message: "Erro ao consultar matéria" });
+    }
+  });
 };
