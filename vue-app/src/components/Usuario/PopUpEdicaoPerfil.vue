@@ -124,8 +124,8 @@ export default {
 
     async verificaExistencia(email) {
       const usuarios = await getUsuarios();
-      for (let i = 0; i < usuarios.length; i++) {
-        if (usuarios[i].email === email && this.usuarioInfo.email != email)
+      for (const element of usuarios) {
+        if (element.email === email && this.usuarioInfo.email != email)
           return true;
       }
       return false;
@@ -234,7 +234,6 @@ button {
 }
 
 .cancelar {
-  border: none;
   width: 48%;
   display: flex;
   padding: 8px 0px 6px 0;

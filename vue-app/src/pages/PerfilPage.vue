@@ -14,7 +14,7 @@
           <img
             :src="verificarUrl(userInfo.foto_url)"
             @error="carregarImgAlternativa"
-            alt="Profile-Picture"
+            alt="Profile-img"
             class="profile-picture"
           />
         </div>
@@ -316,7 +316,6 @@ export default {
 }
 
 .log-out {
-  border: none;
   width: 48%;
   display: flex;
   padding: 14px 0px 14px 0;

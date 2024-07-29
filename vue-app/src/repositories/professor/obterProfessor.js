@@ -1,42 +1,46 @@
 /* eslint-disable */
 const apiUrl = process.env.VUE_APP_API_URL;
+
 export async function getProfessoresAvaliadosNotaTotal() {
-	return new Promise((resolve, reject) => {
-		fetch(`${apiUrl}/professores_avaliados`)
-			.then((resposta) => resposta.json())
-			.then((dados) => resolve(dados.data))
-			.catch((erro) => reject(erro));
-	});
+  try {
+    const resposta = await fetch(`${apiUrl}/professores_avaliados`);
+    const dados = await resposta.json();
+    return dados.data;
+  } catch (erro) {
+    throw new Error(
+      `Erro ao obter professores avaliados nota total: ${erro.message}`
+    );
+  }
 }
 
-//mudança na função para lidar com a mudança feita na requisição do backend
-
 export async function getProfessores(materia) {
-	return new Promise((resolve, reject) => {
-		const url = materia
-			? `${apiUrl}/professores?materia=${encodeURIComponent(materia)}`
-			: `${apiUrl}/professores`;
+  try {
+    const url = materia
+      ? `${apiUrl}/professores?materia=${encodeURIComponent(materia)}`
+      : `${apiUrl}/professores`;
 
-		fetch(url)
-			.then((resposta) => resposta.json())
-			.then((dados) => resolve(dados.data))
-			.catch((erro) => reject(erro));
-	});
+    const resposta = await fetch(url);
+    const dados = await resposta.json();
+    return dados.data;
+  } catch (erro) {
+    throw new Error(`Erro ao obter professores: ${erro.message}`);
+  }
 }
 
 export async function getProfessoresByID(cod_professor, materia) {
-	const apiUrl = process.env.VUE_APP_API_URL;
+  try {
+    const url = materia
+      ? `${apiUrl}/professor/${cod_professor}?materia=${encodeURIComponent(
+          materia
+        )}`
+      : `${apiUrl}/professor/${cod_professor}`;
 
-	//função no service que irá retornar os dados do professor de acordo co
-	return new Promise((resolve, reject) => {
-		const url = materia
-			? `${apiUrl}/professor/${cod_professor}?materia=${encodeURIComponent(
-					materia
-			  )}`
-			: `${apiUrl}/professor/${cod_professor}`;
-		fetch(url)
-			.then((resposta) => resposta.json())
-			.then((dados) => resolve(dados.data))
-			.catch((erro) => reject(erro));
-	});
+    const resposta = await fetch(url);
+    const dados = await resposta.json();
+    return dados.data;
+  } catch (erro) {
+    throw new Error(
+      `Erro ao obter professor com ID ${cod_professor}: ${erro.message}`
+    );
+  }
 }

@@ -13,7 +13,11 @@
     </div>
 
     <div class="rating">
-      <img class="star" src="../../assets/icons/avaliacao/icone-estrela.svg" />
+      <img
+        class="star"
+        src="../../assets/icons/avaliacao/icone-estrela.svg"
+        alt="icon-estrela"
+      />
       <p class="rate">{{ professor.nota_media / 2 }}</p>
     </div>
   </div>
