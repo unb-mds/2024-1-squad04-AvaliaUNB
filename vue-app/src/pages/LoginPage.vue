@@ -13,14 +13,14 @@
         <div class="card">
           <form class="form" @submit.prevent="HandleLogin">
             <div class="inputs">
-              <label class="email"></label>
+              <p class="email"></p>
               <input
                 type="email"
                 placeholder="Insira o seu e-mail"
                 class="form-control"
                 ref="emailInput"
               />
-              <label class="senha"></label>
+              <p class="senha"></p>
               <input
                 type="password"
                 placeholder="Insira sua senha"
@@ -73,12 +73,12 @@ export default {
       try {
         const usuarios = await getUsuarios();
 
-        for (let i = 0; i < usuarios.length; i++) {
+        for (const element of usuarios) {
           if (
-            usuarios[i].email === emailEntrada &&
-            usuarios[i].senha === senhaEntrada
+            element.email === emailEntrada &&
+            element.senha === senhaEntrada
           ) {
-            authGuard(true, usuarios[i].matricula);
+            authGuard(true, element.matricula);
             return 1;
           }
         }
@@ -182,11 +182,6 @@ export default {
   color: #6d6b71; /* Cor cinza */
 }
 
-.inputs {
-  display: grid;
-  gap: 10px;
-}
-
 .buttons-login {
   display: flex;
   margin-top: 10px;
@@ -254,54 +249,6 @@ export default {
 }
 .inputs input {
   width: 25vw;
-}
-
-.buttons-login {
-  display: flex;
-  margin-top: 10px;
-}
-
-.login-button {
-  width: 160px; /* Defina a largura desejada para o botão */
-  height: fit-content; /* Defina a altura desejada para o botão */
-  padding: 3%;
-  background-color: #102c46; /* Cor de fundo do botão */
-  color: white; /* Cor do texto do botão */
-  border: none; /* Remove a borda do botão */
-  border-radius: 12px; /* Raio da borda do botão */
-  font-size: 14px; /* Tamanho da fonte do texto do botão */
-  font-family: "Inter", sans-serif;
-  cursor: pointer; /* Altera o cursor ao passar o mouse sobre o botão */
-  transition: background-color 0.3s ease; /* Adiciona uma transição suave para a cor de fundo */
-}
-
-.login-button:hover {
-  background-color: #003366;
-}
-
-.cadastrar-p {
-  cursor: pointer;
-  color: #ffffff;
-  font-family: "Inter", sans-serif;
-  font-size: 1.4rem;
-  font-weight: 100;
-}
-
-.form-control {
-  margin-top: 2%;
-  border-radius: 12px;
-  padding: 12px;
-  border: none;
-  outline: none;
-}
-
-.custom-image {
-  position: absolute;
-  top: 50%;
-  left: 25%;
-  transform: translate(-50%, -50%);
-  max-width: 100%;
-  max-height: 100%;
 }
 
 /* para telas menores do que 1203px*/

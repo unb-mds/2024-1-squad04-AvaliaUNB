@@ -34,7 +34,7 @@
             <h1>{{ professor.nome_professor }}</h1>
             <h3>Faculdade do Gama</h3>
             <div class="selectdiv">
-              <label class="selecionarmaterias">Selecione uma matéria</label>
+              <p class="selecionarmaterias">Selecione uma matéria</p>
               <select v-model="materia" class="select-box">
                 <option class="opcao" value="">TODAS</option>
                 <option
@@ -927,7 +927,6 @@ svg {
   font-family: "Inter", sans-serif;
   font-size: 1.3rem;
   background-color: #102c46;
-  color: white;
   border: none;
   padding: 10px 20px 10px 20px;
   border-radius: 7px;
@@ -1106,7 +1105,6 @@ select option {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  align-items: center;
 }
 .materia-details-rating2 {
   width: 39%;

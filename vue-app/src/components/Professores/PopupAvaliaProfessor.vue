@@ -139,15 +139,14 @@ export default {
         let professoresAvaliados = await descriptarDados(
           sessionStorage.getItem("professores_avaliados")
         );
-        for (let i = 0; i < professoresAvaliados.length; i++) {
+        for (const element of professoresAvaliados) {
           if (
-            professoresAvaliados[i].cod_professor ===
-              this.professor.cod_professor &&
-            professoresAvaliados[i].cod_materia ===
-              this.comentario_materia.materia
+            element.cod_professor === this.professor.cod_professor &&
+            element.cod_materia === this.comentario_materia.materia
           ) {
             this.loading = false;
-            return (this.erro = "Você ja avaliou esse professor nessa materia");
+            this.erro = "Você ja avaliou esse professor nessa materia";
+            return;
           }
         }
         professoresAvaliados = [
@@ -165,8 +164,8 @@ export default {
         const matriculaLogadaStr = await getUsuarioLogado();
         const matriculaLogada = parseInt(matriculaLogadaStr, 10);
         const usuarios = await getUsuarios();
-        for (let i = 0; i < usuarios.length; i++) {
-          if (matriculaLogada === usuarios[i].matricula) {
+        for (const element of usuarios) {
+          if (matriculaLogada === element.matricula) {
             await enviarAvaliacaoProfessor(
               matriculaLogada,
               this.professor.cod_professor,

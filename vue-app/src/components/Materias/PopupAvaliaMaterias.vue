@@ -86,17 +86,16 @@ export default {
           this.loading = false;
           return;
         }
-        for (let i = 0; i < usuarios.length; i++) {
-          if (matriculaLogada === usuarios[i].matricula) {
+        for (const element of usuarios) {
+          if (matriculaLogada === element.matricula) {
             let materiasAvaliadas = await descriptarDados(
               sessionStorage.getItem("materias_avaliadas")
             );
-            for (let i = 0; i < materiasAvaliadas.length; i++) {
-              if (
-                materiasAvaliadas[i].cod_materia === this.materia.cod_materia
-              ) {
+            for (const element of materiasAvaliadas) {
+              if (element.cod_materia === this.materia.cod_materia) {
                 this.loading = false;
-                return (this.erro = "Você ja avaliou essa materia");
+                this.erro = "Você ja avaliou essa materia";
+                return;
               }
             }
             materiasAvaliadas = [

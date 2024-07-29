@@ -1,20 +1,35 @@
-// essa função obtem os usuários para verificações de existencia e login
+const apiUrl = process.env.VUE_APP_API_URL;
+
+// Função para obter todos os usuários
 export async function getUsuarios() {
-	const apiUrl = process.env.VUE_APP_API_URL;
-	return new Promise((resolve, reject) => {
-		fetch(`${apiUrl}/usuario`)
-			.then((resposta) => resposta.json())
-			.then((dados) => resolve(dados))
-			.catch((erro) => reject(erro));
-	});
+  try {
+    const resposta = await fetch(`${apiUrl}/usuario`);
+    if (!resposta.ok) {
+      throw new Error(`Erro ao obter usuários: ${resposta.statusText}`);
+    }
+    const dados = await resposta.json();
+    return dados;
+  } catch (erro) {
+    throw new Error(`Erro ao obter usuários: ${erro.message}`);
+  }
 }
 
+// Função para obter um usuário pelo ID
 export async function getUsuarioByID(matricula) {
-	const apiUrl = process.env.VUE_APP_API_URL;
-	return new Promise((resolve, reject) => {
-		fetch(`${apiUrl}/usuario_session_storage/${matricula}`)
-			.then((resposta) => resposta.json())
-			.then((dados) => resolve(dados))
-			.catch((erro) => reject(erro));
-	});
+  try {
+    const resposta = await fetch(
+      `${apiUrl}/usuario_session_storage/${matricula}`
+    );
+    if (!resposta.ok) {
+      throw new Error(
+        `Erro ao obter usuário pelo ID ${matricula}: ${resposta.statusText}`
+      );
+    }
+    const dados = await resposta.json();
+    return dados;
+  } catch (erro) {
+    throw new Error(
+      `Erro ao obter usuário pelo ID ${matricula}: ${erro.message}`
+    );
+  }
 }

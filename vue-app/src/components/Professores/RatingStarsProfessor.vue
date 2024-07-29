@@ -269,7 +269,7 @@ export default {
 .rating input::before {
   content: "\f005";
   position: absolute;
-  font-family: fontAwesome;
+  font-family: fontAwesome, sans-serif;
   font-size: 3rem;
   color: #b4b4b4a2;
   transition: 0.3s;
