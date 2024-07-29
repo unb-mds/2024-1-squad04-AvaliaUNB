@@ -18,6 +18,7 @@
             <img
               class="star"
               src="../../assets/icons/avaliacao/icone-estrela.svg"
+              alt="icon-estrela"
             />
             <p class="rate">{{ professor2.nota_media / 2 }}</p>
           </div>
@@ -40,6 +41,7 @@
             <img
               class="star"
               src="../../assets/icons/avaliacao/icone-estrela.svg"
+              alt="icon-estrela"
             />
             <p class="rate">{{ professor1.nota_media / 2 }}</p>
           </div>
@@ -63,6 +65,7 @@
             <img
               class="star"
               src="../../assets/icons/avaliacao/icone-estrela.svg"
+              alt="icon-estrela"
             />
             <p class="rate">{{ professor3.nota_media / 2 }}</p>
           </div>

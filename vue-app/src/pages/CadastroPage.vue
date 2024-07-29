@@ -15,7 +15,7 @@
             <div class="inputs">
               <div class="form-group">
                 <div class="element">
-                  <label for="nome" class="mr-flex"></label>
+                  <p for="nome" class="mr-flex"></p>
                   <input
                     id="nome"
                     v-model="formData.nome"
@@ -25,7 +25,7 @@
                   />
                 </div>
                 <div class="element">
-                  <label for="sobrenome" class="mr-flex"></label>
+                  <p for="sobrenome" class="mr-flex"></p>
                   <input
                     id="sobrenome"
                     v-model="formData.sobrenome"
@@ -37,7 +37,7 @@
               </div>
 
               <div class="element">
-                <label for="email" class="d-flex"></label>
+                <p for="email" class="d-flex"></p>
                 <input
                   id="email"
                   v-model="formData.email"
@@ -48,7 +48,7 @@
                 />
               </div>
               <div class="element">
-                <label for="cpf" class="mr-flex"></label>
+                <p for="cpf" class="mr-flex"></p>
                 <input
                   :maxlength="14"
                   :minlength="14"
@@ -61,7 +61,7 @@
                 />
               </div>
               <div class="element">
-                <label for="curso" class="mr-2"></label>
+                <p for="curso" class="mr-2"></p>
                 <select
                   id="curso"
                   v-model="formData.curso"
@@ -87,7 +87,7 @@
                 </select>
               </div>
               <div class="element">
-                <label for="matricula" class="mr-2"></label>
+                <p for="matricula" class="mr-2"></p>
                 <input
                   :minlength="7"
                   :maxlength="9"
@@ -100,7 +100,7 @@
               </div>
               <div class="form-group">
                 <div class="element">
-                  <label for="senha" class="mr-2"></label>
+                  <p for="senha" class="mr-2"></p>
                   <input
                     id="senha"
                     v-model="formData.senha"
@@ -112,7 +112,7 @@
                 </div>
 
                 <div class="element">
-                  <label for="confirma_senha" class="mr-2"></label>
+                  <p for="confirma_senha" class="mr-2"></p>
                   <input
                     id="confirma_senha"
                     v-model="confirmacao_senha"
@@ -152,7 +152,6 @@
 
 <script>
 import router from "../routes/index";
-//import  axios  from "axios";
 import { getUsuarios } from "@/repositories/usuario/obterUsuarios";
 import { cadastrarUsuarioDB } from "@/repositories/usuario/cadastrarUsuario";
 import {
@@ -203,16 +202,16 @@ export default {
           return "Digite uma matrícula válida";
         }
         const usuarios = await getUsuarios();
-        for (let i = 0; i < usuarios.length; i++) {
-          if (usuarios[i].email === this.formData.email) {
+        for (const element of usuarios) {
+          if (element.email === this.formData.email) {
             return "O e-mail já está cadastrado.";
           }
 
-          if (usuarios[i].matricula.toString() === this.formData.matricula) {
+          if (element.matricula.toString() === this.formData.matricula) {
             return "A matrícula já está cadastrada.";
           }
 
-          if (usuarios[i].cpf === this.formData.cpf) {
+          if (element.cpf === this.formData.cpf) {
             return "O CPF já está cadastrado.";
           }
         }
@@ -287,6 +286,10 @@ export default {
 </script>
 
 <style scoped>
+p {
+  margin: 0;
+  padding: 0;
+}
 .inputs {
   display: grid;
   gap: 15px;

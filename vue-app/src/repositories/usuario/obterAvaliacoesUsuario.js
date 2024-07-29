@@ -1,19 +1,31 @@
 const apiUrl = process.env.VUE_APP_API_URL;
 
 export async function getMinhasAvaliacoesDeProfessor(matricula) {
-	//função que irá retornar as avaliações do usuário
-	return new Promise((resolve, reject) => {
-		fetch(`${apiUrl}/avaliacoes_professor/${matricula}`)
-			.then((resposta) => resposta.json())
-			.then((dados) => resolve(dados.data))
-			.catch((erro) => reject(erro));
-	});
+  try {
+    const resposta = await fetch(`${apiUrl}/avaliacoes_professor/${matricula}`);
+    if (!resposta.ok) {
+      throw new Error(
+        `Erro ao obter avaliações de professor: ${resposta.statusText}`
+      );
+    }
+    const dados = await resposta.json();
+    return dados.data;
+  } catch (erro) {
+    throw new Error(`Erro ao obter avaliações de professor: ${erro.message}`);
+  }
 }
+
 export async function getMinhasAvaliacoesDeMaterias(matricula) {
-	return new Promise((resolve, reject) => {
-		fetch(`${apiUrl}/avaliacoes_materia/${matricula}`)
-			.then((resposta) => resposta.json())
-			.then((dados) => resolve(dados.data))
-			.catch((erro) => reject(erro));
-	});
+  try {
+    const resposta = await fetch(`${apiUrl}/avaliacoes_materia/${matricula}`);
+    if (!resposta.ok) {
+      throw new Error(
+        `Erro ao obter avaliações de matérias: ${resposta.statusText}`
+      );
+    }
+    const dados = await resposta.json();
+    return dados.data;
+  } catch (erro) {
+    throw new Error(`Erro ao obter avaliações de matérias: ${erro.message}`);
+  }
 }
