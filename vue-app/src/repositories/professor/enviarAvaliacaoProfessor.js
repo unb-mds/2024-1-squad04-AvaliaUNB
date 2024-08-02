@@ -39,5 +39,6 @@ export async function enviarAvaliacaoProfessor(
     return await response.json();
   } catch (error) {
     console.error(error);
+    throw error;
   }
 }

@@ -12,7 +12,7 @@ import PerfilPage from "../pages/PerfilPage.vue";
 import axios from "axios";
 import { descriptarDados } from "@/generals/descriptografarDados";
 
-const beforeEnterCheck = async () => {
+export const beforeEnterCheck = async () => {
   const apiUrl = process.env.VUE_APP_API_URL;
   if (sessionStorage.getItem("matricula") != null) {
     try {
@@ -105,5 +105,4 @@ const router = createRouter({
     },
   ],
 });
-
 export default router;

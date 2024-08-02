@@ -1,7 +1,7 @@
 import {
   deletarAvaliacaoComentarioProfessor,
   deletarAvaliacaoComentarioMateria,
-} from "@/repositories/avaliacao/deletarAvaliacoes";
+} from "../../repositories/avaliacao/deletarAvaliacoes";
 import axios from "axios";
 import CryptoJS from "crypto-js";
 export async function deletarAvaliacaoProfessor(cod_avaliacao, cod_comentario) {
