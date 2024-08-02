@@ -7,9 +7,7 @@ export async function getProfessoresAvaliadosNotaTotal() {
     const dados = await resposta.json();
     return dados.data;
   } catch (erro) {
-    throw new Error(
-      `Erro ao obter professores avaliados nota total: ${erro.message}`
-    );
+    console.error(erro);
   }
 }
 
@@ -23,7 +21,7 @@ export async function getProfessores(materia) {
     const dados = await resposta.json();
     return dados.data;
   } catch (erro) {
-    throw new Error(`Erro ao obter professores: ${erro.message}`);
+    console.error(erro);
   }
 }
 
@@ -39,8 +37,6 @@ export async function getProfessoresByID(cod_professor, materia) {
     const dados = await resposta.json();
     return dados.data;
   } catch (erro) {
-    throw new Error(
-      `Erro ao obter professor com ID ${cod_professor}: ${erro.message}`
-    );
+    console.error(erro);
   }
 }

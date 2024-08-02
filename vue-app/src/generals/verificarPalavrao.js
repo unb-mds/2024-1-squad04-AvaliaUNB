@@ -1,5 +1,5 @@
-const Piii = require("piii");
-const piiiFilters = require("piii-filters");
+import Piii from "piii";
+import piiiFilters from "piii-filters";
 
 const removeAccents = (string) =>
   string

@@ -2,6 +2,10 @@ import CryptoJS from "crypto-js";
 import axios from "axios";
 
 export async function descriptarDados(dadoCriptografado) {
+  if (!dadoCriptografado) {
+    console.error("Erro ao descriptografar os dados!");
+    return [];
+  }
   const apiUrl = process.env.VUE_APP_API_URL;
   try {
     const response = await axios.get(`${apiUrl}/chave`);

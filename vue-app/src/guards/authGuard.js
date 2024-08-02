@@ -1,6 +1,6 @@
 import router from "../routes/index.js";
-import { getUsuarioByID } from "@/repositories/usuario/obterUsuarios.js";
-import { encriptarDados } from "@/generals/encripitarDados.js";
+import { getUsuarioByID } from "../repositories/usuario/obterUsuarios.js";
+import { encriptarDados } from "../generals/encripitarDados.js";
 
 export async function authGuard(auth, matricula) {
   if (auth) {
