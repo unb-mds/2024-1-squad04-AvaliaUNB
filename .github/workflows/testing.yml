@@ -16,7 +16,15 @@ jobs:
               uses: actions/setup-node@v1
               with:
                   node-version: ${{ matrix.node-version }}
-            - name: npm install
-              run: npm install
-            - name: tests
-              run: npm test
+
+            - name: Instalar dependencias para o vue
+              run: npm install --prefix ./vue-app
+
+            - name: Rodar testes para o vue
+              run: npm test --prefix ./vue-app
+
+            - name: Instalar dependencias para o node
+              run: npm install --prefix ./node-app
+
+            - name: Rodas testes para o node
+              run: npm test --prefix ./node-app
