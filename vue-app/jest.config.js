@@ -1,5 +1,6 @@
 // jest.config.js
 module.exports = {
+    testEnvironment: 'jsdom',
     testMatch: ["**/tests/**/**/*.spec.js"],
     transform: {
         "^.+\\.vue$": "vue-jest",
@@ -7,3 +8,4 @@ module.exports = {
     },
     moduleFileExtensions: ["js", "jsx", "json", "vue"],
 };
+

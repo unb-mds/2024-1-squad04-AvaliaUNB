@@ -18,14 +18,14 @@ Para curtir um comentário:
     - atualizando o sessionstorage também
 */
 
-import { descriptarDados } from "@/generals/descriptografarDados";
-import { encriptarDados } from "@/generals/encripitarDados";
+import { descriptarDados } from "../../generals/descriptografarDados";
+import { encriptarDados } from "../../generals/encripitarDados";
 import {
   curtirDescurtirComentarioMateria,
   relacionamentoUsuarioCurtidaMateria,
-} from "@/repositories/comentario/enviarLikeDislikeMateria";
-import { deletarRelacionamentoUsuarioComentarioMateria } from "@/repositories/comentario/deletarLikeDislikeMateria";
-import { editarRelacionamentoUsuarioComentarioMateria } from "@/repositories/comentario/editarRelacionamentoUsuarioComentario";
+} from "../../repositories/comentario/enviarLikeDislikeMateria";
+import { deletarRelacionamentoUsuarioComentarioMateria } from "../../repositories/comentario/deletarLikeDislikeMateria";
+import { editarRelacionamentoUsuarioComentarioMateria } from "../../repositories/comentario/editarRelacionamentoUsuarioComentario";
 
 async function curtirComentario(cod_comentario, comentariosCurtidos) {
   const matriculaDescriptografada = await descriptarDados(

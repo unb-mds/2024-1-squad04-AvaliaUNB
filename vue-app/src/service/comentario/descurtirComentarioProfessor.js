@@ -18,14 +18,14 @@ Para dar dislike um comentário:
     - atualizando o sessionstorage também
 */
 
-import { descriptarDados } from "@/generals/descriptografarDados";
-import { encriptarDados } from "@/generals/encripitarDados";
+import { descriptarDados } from "../../generals/descriptografarDados";
+import { encriptarDados } from "../../generals/encripitarDados";
 import {
   curtirDescurtirComentarioProfessor,
   relacionamentoUsuarioCurtidaProfessor,
-} from "@/repositories/comentario/enviarLikeDislikeProfessor";
-import { deletarRelacionamentoUsuarioComentarioProfessor } from "@/repositories/comentario/deletarLikeDislikeProfessor";
-import { editarRelacionamentoUsuarioComentarioProfessor } from "@/repositories/comentario/editarRelacionamentoUsuarioComentario";
+} from "../../repositories/comentario/enviarLikeDislikeProfessor";
+import { deletarRelacionamentoUsuarioComentarioProfessor } from "../../repositories/comentario/deletarLikeDislikeProfessor";
+import { editarRelacionamentoUsuarioComentarioProfessor } from "../../repositories/comentario/editarRelacionamentoUsuarioComentario";
 
 async function dislikeComentario(cod_comentario, comentariosCurtidos) {
   const matriculaDescriptografada = await descriptarDados(

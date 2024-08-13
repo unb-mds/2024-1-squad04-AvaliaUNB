@@ -18,8 +18,8 @@ Para curtir um comentário:
     - atualizando o sessionstorage também
 */
 
-import { descriptarDados } from "@/generals/descriptografarDados";
-import { encriptarDados } from "@/generals/encripitarDados";
+import { descriptarDados } from "../../generals/descriptografarDados";
+import { encriptarDados } from "../../generals/encripitarDados";
 import {
   curtirDescurtirComentarioProfessor,
   relacionamentoUsuarioCurtidaProfessor,
