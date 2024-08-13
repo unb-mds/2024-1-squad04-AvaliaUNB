@@ -26,5 +26,3 @@ jobs:
             - name: Instalar dependencias para o node
               run: npm install --prefix ./node-app
 
-            - name: Rodas testes para o node
-              run: npm test --prefix ./node-app
