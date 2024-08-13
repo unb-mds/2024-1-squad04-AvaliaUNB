@@ -1,3 +1,0 @@
-Essa pasta é destinada a testes de componentes do Vue utilizando a biblioteca Vue Tests Utils
-Os testes devem ser separados por pastas de acordo com o seu contexto, por exemplo a pasta Cards, pasta Avaliação, pasta Ranking, pasta Professor, pasta Materia
-Os arquivos de testes devem seguir a nomeclatura NomeDoComponent.spec.js

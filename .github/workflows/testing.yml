@@ -1,0 +1,28 @@
+name: Tests
+
+on: [pull_request]
+
+jobs:
+    tests:
+        runs-on: ubuntu-latest
+
+        strategy:
+            matrix:
+                node-version: [20.x]
+
+        steps:
+            - uses: actions/checkout@v2
+            - name: Use Node.js ${{ matrix.node-version }}
+              uses: actions/setup-node@v1
+              with:
+                  node-version: ${{ matrix.node-version }}
+
+            - name: Instalar dependencias para o vue
+              run: npm install --prefix ./vue-app
+
+            - name: Rodar testes para o vue
+              run: npm test --prefix ./vue-app
+
+            - name: Instalar dependencias para o node
+              run: npm install --prefix ./node-app
+
