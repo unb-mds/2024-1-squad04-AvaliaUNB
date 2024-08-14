@@ -49,7 +49,7 @@
 
 <script>
 import router from "../routes/index";
-import { autenticaUsuario } from "@/repositories/usuario/obterUsuarios.js";
+import { autenticaUsuario } from "@/repositories/usuario/autenticarUsuario.js";
 import LoadingComponent from "../components/Navegacao/LoadingComponent.vue";
 
 export default {
