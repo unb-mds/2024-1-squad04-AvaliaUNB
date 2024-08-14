@@ -11,10 +11,10 @@ import * as Comentario from "./controllers/ComentarioMET.js";
 dotenv.config();
 
 const corsOptions = {
-	origin: process.env.URL_FRONT_END,
-	methods: ["GET", "POST", "PUT", "DELETE"],
-	allowedHeaders: ["Content-Type", "Authorization"],
-	credentials: true,
+  origin: process.env.URL_FRONT_END,
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true,
 };
 
 const app = express();
@@ -23,23 +23,22 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 const sequelize = new Sequelize({
-	dialect: "mysql",
-	host: process.env.DB_HOST,
-	username: process.env.DB_USER,
-	password: process.env.DB_PASSWORD,
-	database: process.env.DB_NAME,
+  dialect: "mysql",
+  host: process.env.DB_HOST,
+  username: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
 });
 
 sequelize
-	.authenticate()
-	.then(function () {
-		console.log("Conectado ao Banco de Dados");
-	})
-	.catch(function (erro) {
-		console.log(erro);
-	});
+  .authenticate()
+  .then(function () {
+    console.log("Conectado ao Banco de Dados");
+  })
+  .catch(function (erro) {
+    console.log(erro);
+  });
 
-User.autenticaUsuario(app, sequelize);
 User.getDados(app, sequelize);
 User.getDadosSessionStorage(app, sequelize);
 User.postDados(app, sequelize);
@@ -73,5 +72,5 @@ Comentario.deletarRelacionamentoUsuarioComentarioMateria(app, sequelize);
 Comentario.editarRelacionamentoUsuarioComentarioMateria(app, sequelize);
 
 app.listen(3000, () => {
-	console.log("API is running on port 3000");
+  console.log("API is running on port 3000");
 });
