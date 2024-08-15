@@ -144,6 +144,27 @@ cd .\vue-app\
 npm run serve
 ```
 
+### Execução de testes front-end
+
+Para executar os testes unitários da aplicação
+```bash
+
+cd .\vue-app\
+npm run test
+
+# Para ver o code coverage dos testes
+npm run coverage
+```
+
+Para executar os testes e2e da aplicação
+```bash
+
+cd .\vue-app\
+npx cypress run
+
+```
+
+
 ## Extra
 
 ### Story Map e Activity Flow
